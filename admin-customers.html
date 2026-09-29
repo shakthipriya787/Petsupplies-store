@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin Customers — Paw &amp; Whisker Pet Supplies</title>
+<meta name="description" content="Understand Paw &amp; Whisker customers, customer segments and service insights." />
+<meta name="theme-color" content="#123a32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<main id="main" class="dashboard-page">
+  <div class="dashboard-frame">
+    <div class="dashboard-shell">
+      <div class="dashboard-mobilebar">
+        <a class="brand" href="admin-dashboard.html" aria-label="Stackly admin dashboard">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <button class="icon-btn dashboard-mobilebar__toggle" type="button" aria-expanded="false" aria-controls="dashboard-menu" aria-label="Open menu">
+          <i class="fa-solid fa-bars ico dashboard-toggle__open" aria-hidden="true" style="font-size:22px"></i>
+          <i class="fa-solid fa-xmark ico dashboard-toggle__close" aria-hidden="true" style="font-size:22px"></i>
+        </button>
+      </div>
+      <aside id="dashboard-menu" class="dashboard-sidebar dashboard-sidebar--admin" aria-label="Admin dashboard navigation">
+        <a class="brand" href="admin-dashboard.html" aria-label="Stackly admin dashboard">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+          <span class="brand__text">
+            <span class="brand__tag">Admin Console</span>
+          </span>
+        </a>
+
+        <nav class="dashboard-nav">
+          <a class="dashboard-nav__link" href="admin-dashboard.html">
+            <i class="fa-solid fa-table-cells-large ico" aria-hidden="true"></i>
+            Overview
+          </a>
+          <a class="dashboard-nav__link" href="admin-orders.html">
+            <i class="fa-solid fa-receipt ico" aria-hidden="true"></i>
+            Orders <span class="dashboard-nav__badge">18</span>
+          </a>
+          <a class="dashboard-nav__link" href="admin-inventory.html">
+            <i class="fa-solid fa-box ico" aria-hidden="true"></i>
+            Inventory
+          </a>
+          <a class="dashboard-nav__link" href="admin-customers.html" aria-current="page">
+            <i class="fa-solid fa-users ico" aria-hidden="true"></i>
+            Customers
+          </a>
+          <a class="dashboard-nav__link" href="admin-settings.html">
+            <i class="fa-solid fa-gear ico" aria-hidden="true"></i>
+            Settings
+          </a>
+        </nav>
+
+        <div class="dashboard-help">
+          <strong>System status</strong>
+          <p>All services are running normally.</p>
+          <a href="contact.html#form">Contact support <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="dashboard-sidebar__foot">
+          <a class="dashboard-logout" href="login.html" data-logout>
+            <i class="fa-solid fa-arrow-right-from-bracket ico" aria-hidden="true"></i>
+            Log out
+          </a>
+        </div>
+      </aside>
+
+      <div class="dashboard-main">
+        <section class="dashboard-topbar dashboard-page-topbar" aria-labelledby="admin-customers-title">
+          <div>
+            <span class="eyebrow">Admin console</span>
+            <h1 id="admin-customers-title">Customers</h1>
+            <p>Understand your community and build lasting pet-parent relationships.</p>
+          </div>
+          <div class="dashboard-topbar__actions">
+            <a class="btn btn--outline btn--sm" href="contact.html#form">Contact support</a>
+            <div class="dashboard-identity"><strong class="dashboard-identity__name" data-user-name>Alex Morgan</strong><span class="dashboard-identity__email" data-user-email>alex@gmail.com</span></div>
+            <span class="dashboard-avatar" data-user-avatar aria-label="Administrator Alex Morgan">AM</span>
+          </div>
+        </section>
+
+        <section class="dashboard-summary dashboard-summary--four" aria-label="Customer summary">
+          <article class="dashboard-summary__item"><span class="dashboard-summary__icon" aria-hidden="true"><i class="fa-solid fa-user-plus ico" aria-hidden="true"></i></span><div><strong>4,821</strong><span>Total customers</span></div></article>
+          <article class="dashboard-summary__item dashboard-summary__item--accent"><span class="dashboard-summary__icon" aria-hidden="true"><i class="fa-solid fa-plus ico" aria-hidden="true"></i></span><div><strong>126</strong><span>New this month</span></div></article>
+          <article class="dashboard-summary__item dashboard-summary__item--gold"><span class="dashboard-summary__icon" aria-hidden="true"><i class="fa-solid fa-arrows-rotate ico" aria-hidden="true"></i></span><div><strong>68%</strong><span>Repeat customers</span></div></article>
+          <article class="dashboard-summary__item dashboard-summary__item--dark"><span class="dashboard-summary__icon" aria-hidden="true"><i class="fa-solid fa-star ico" aria-hidden="true"></i></span><div><strong>4.9/5</strong><span>Average rating</span></div></article>
+        </section>
+
+        <div class="dashboard-content-grid">
+          <div class="dashboard-stack">
+            <section class="dashboard-card" aria-labelledby="customer-table-title">
+              <div class="dashboard-card__head"><div><h2 id="customer-table-title">Customer directory</h2><p>Most recently active pet parents.</p></div><a class="dashboard-card__link" href="contact.html#form">Export list <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a></div>
+              <div class="admin-customer-toolbar"><label class="sr-only" for="customer-search">Search customers</label><input id="customer-search" type="search" placeholder="Search by name or email" /><button class="btn btn--outline btn--sm" type="button">Search</button></div>
+              <div class="dashboard-table-wrap"><table class="dashboard-table" aria-label="Customer directory"><thead><tr><th>Customer</th><th>Email</th><th>Orders</th><th>Total spent</th><th>Last order</th><th>Segment</th></tr></thead><tbody>
+                <tr><td><strong>Jamie Davis</strong></td><td>jamie@example.com</td><td>12</td><td>$684.20</td><td>Today</td><td><span class="dashboard-status dashboard-status--green">Loyal</span></td></tr>
+                <tr><td><strong>Maya Patel</strong></td><td>maya@example.com</td><td>8</td><td>$512.80</td><td>Yesterday</td><td><span class="dashboard-status dashboard-status--blue">Returning</span></td></tr>
+                <tr><td><strong>Noah Williams</strong></td><td>noah@example.com</td><td>5</td><td>$348.40</td><td>Sep 23, 2026</td><td><span class="dashboard-status dashboard-status--green">Loyal</span></td></tr>
+                <tr><td><strong>Sofia Garcia</strong></td><td>sofia@example.com</td><td>2</td><td>$118.75</td><td>Sep 18, 2026</td><td><span class="dashboard-status dashboard-status--orange">New</span></td></tr>
+                <tr><td><strong>Oliver Chen</strong></td><td>oliver@example.com</td><td>4</td><td>$241.30</td><td>Sep 12, 2026</td><td><span class="dashboard-status dashboard-status--blue">Returning</span></td></tr>
+              </tbody></table></div>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="reviews-title">
+              <div class="dashboard-card__head"><div><h2 id="reviews-title">Recent reviews</h2><p>What pet parents said this week.</p></div><span class="dashboard-status dashboard-status--green">4.9 avg</span></div>
+              <div class="admin-alert-list">
+                <div class="admin-alert"><div><strong>Maya Patel</strong><span>“Luna loved the new bed. Arrived a day early.”</span></div><span class="dashboard-status dashboard-status--green">5.0</span></div>
+                <div class="admin-alert"><div><strong>Oliver Chen</strong><span>“Shampoo was gentle and the staff were lovely.”</span></div><span class="dashboard-status dashboard-status--green">5.0</span></div>
+                <div class="admin-alert"><div><strong>Sofia Garcia</strong><span>“Great value, though the box was a little dented.”</span></div><span class="dashboard-status dashboard-status--orange">4.0</span></div>
+              </div>
+            </section>
+          </div>
+
+          <aside class="dashboard-stack">
+            <section class="dashboard-card" aria-labelledby="segments-title">
+              <div class="dashboard-card__head"><div><h2 id="segments-title">Customer segments</h2><p>How your community is growing.</p></div></div>
+              <div class="admin-progress-list">
+                <div class="admin-progress__row"><div><strong>Loyal customers</strong><span>1,284 customers</span></div><div class="admin-progress__bar"><span style="--progress:72%"></span></div></div>
+                <div class="admin-progress__row"><div><strong>Returning customers</strong><span>2,014 customers</span></div><div class="admin-progress__bar"><span style="--progress:58%"></span></div></div>
+                <div class="admin-progress__row"><div><strong>New customers</strong><span>1,523 customers</span></div><div class="admin-progress__bar"><span style="--progress:38%"></span></div></div>
+              </div>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="customer-care-title">
+              <div class="dashboard-card__head"><div><h2 id="customer-care-title">Customer care</h2><p>Helpful notes for your team.</p></div></div>
+              <div class="admin-alert-list">
+                <div class="admin-alert"><div><strong>12 support conversations</strong><span>4 need a reply today</span></div><span class="dashboard-status dashboard-status--orange">Open</span></div>
+                <div class="admin-alert"><div><strong>7 delivery questions</strong><span>Most common this week</span></div><span class="dashboard-status dashboard-status--blue">Review</span></div>
+                <div class="admin-alert"><div><strong>98% positive feedback</strong><span>Across the last 30 days</span></div><span class="dashboard-status dashboard-status--green">Great</span></div>
+              </div>
+              <a class="btn btn--outline btn--block mt-l" href="contact.html#form">Open support inbox</a>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="referral-title">
+              <div class="dashboard-card__head"><div><h2 id="referral-title">Referral programme</h2><p>Reward pet parents who bring a friend.</p></div></div>
+              <div class="admin-alert-list">
+                <div class="admin-alert"><div><strong>Code PAWS10</strong><span>4 conversions this month</span></div><span class="dashboard-status dashboard-status--green">Live</span></div>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin Dashboard — Paw &amp; Whisker Pet Supplies</title>
+<meta name="description" content="Paw &amp; Whisker administration dashboard for sales, orders, inventory and customer insights." />
+<meta name="theme-color" content="#123a32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<main id="main" class="dashboard-page">
+  <div class="dashboard-frame">
+    <div class="dashboard-shell">
+      <div class="dashboard-mobilebar">
+        <a class="brand" href="admin-dashboard.html" aria-label="Stackly admin dashboard">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <button class="icon-btn dashboard-mobilebar__toggle" type="button" aria-expanded="false" aria-controls="dashboard-menu" aria-label="Open menu">
+          <i class="fa-solid fa-bars ico dashboard-toggle__open" aria-hidden="true" style="font-size:22px"></i>
+          <i class="fa-solid fa-xmark ico dashboard-toggle__close" aria-hidden="true" style="font-size:22px"></i>
+        </button>
+      </div>
+      <aside id="dashboard-menu" class="dashboard-sidebar dashboard-sidebar--admin" aria-label="Admin dashboard navigation">
+        <a class="brand" href="admin-dashboard.html" aria-label="Stackly admin dashboard">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+          <span class="brand__text">
+            <span class="brand__tag">Admin Console</span>
+          </span>
+        </a>
+
+        <nav class="dashboard-nav">
+          <a class="dashboard-nav__link" href="admin-dashboard.html" aria-current="page">
+            <i class="fa-solid fa-table-cells-large ico" aria-hidden="true"></i>
+            Overview
+          </a>
+          <a class="dashboard-nav__link" href="admin-orders.html">
+            <i class="fa-solid fa-receipt ico" aria-hidden="true"></i>
+            Orders <span class="dashboard-nav__badge">18</span>
+          </a>
+          <a class="dashboard-nav__link" href="admin-inventory.html">
+            <i class="fa-solid fa-box ico" aria-hidden="true"></i>
+            Inventory
+          </a>
+          <a class="dashboard-nav__link" href="admin-customers.html">
+            <i class="fa-solid fa-users ico" aria-hidden="true"></i>
+            Customers
+          </a>
+          <a class="dashboard-nav__link" href="admin-settings.html">
+            <i class="fa-solid fa-gear ico" aria-hidden="true"></i>
+            Settings
+          </a>
+        </nav>
+
+        <div class="dashboard-help">
+          <strong>System status</strong>
+          <p>All services are running normally.</p>
+          <a href="contact.html#form">Contact support <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="dashboard-sidebar__foot">
+          <a class="dashboard-logout" href="login.html" data-logout>
+            <i class="fa-solid fa-arrow-right-from-bracket ico" aria-hidden="true"></i>
+            Log out
+          </a>
+        </div>
+      </aside>
+
+      <div class="dashboard-main">
+        <section id="overview" aria-labelledby="admin-dashboard-title">
+          <div class="dashboard-topbar">
+            <div>
+              <h1 id="admin-dashboard-title">Store overview</h1>
+              <p>Friday, September 25 · Live store performance</p>
+            </div>
+            <div class="dashboard-topbar__actions">
+              <button class="icon-btn" type="button" aria-label="Notifications">
+                <i class="fa-solid fa-bell ico" aria-hidden="true" style="font-size:21px"></i>
+              </button>
+              <div class="dashboard-identity"><strong class="dashboard-identity__name" data-user-name>Alex Morgan</strong><span class="dashboard-identity__email" data-user-email>alex@gmail.com</span></div>
+              <span class="dashboard-avatar" data-user-avatar aria-label="Administrator Alex Morgan">AM</span>
+            </div>
+          </div>
+
+          <div class="dashboard-welcome">
+            <div>
+              <h2>Good morning, <span data-user-first>Alex</span></h2>
+              <p>Revenue is up 12.4% this month, with 18 orders waiting to be fulfilled.</p>
+            </div>
+            <a class="btn btn--accent" href="admin-inventory.html#add-product">Add a product</a>
+          </div>
+
+          <div class="dashboard-stats">
+            <article class="dashboard-stat">
+              <span class="dashboard-stat__icon" aria-hidden="true"><i class="fa-solid fa-dollar-sign ico" aria-hidden="true"></i></span>
+              <div><strong>$48,290</strong><span>Revenue this month</span></div>
+            </article>
+            <article class="dashboard-stat dashboard-stat--accent">
+              <span class="dashboard-stat__icon" aria-hidden="true"><i class="fa-solid fa-receipt ico" aria-hidden="true"></i></span>
+              <div><strong>328</strong><span>Orders this month</span></div>
+            </article>
+            <article class="dashboard-stat dashboard-stat--gold">
+              <span class="dashboard-stat__icon" aria-hidden="true"><i class="fa-solid fa-user-plus ico" aria-hidden="true"></i></span>
+              <div><strong>4,821</strong><span>Total customers</span></div>
+            </article>
+            <article class="dashboard-stat dashboard-stat--dark">
+              <span class="dashboard-stat__icon" aria-hidden="true"><i class="fa-solid fa-cube ico" aria-hidden="true"></i></span>
+              <div><strong>1,250</strong><span>Active products</span></div>
+            </article>
+          </div>
+        </section>
+
+        <div class="dashboard-overview">
+          <section class="dashboard-card" aria-labelledby="revenue-title">
+            <div class="dashboard-card__head">
+              <div><h2 id="revenue-title">Revenue overview</h2><p>Weekly sales for September 2026.</p></div>
+              <span class="dashboard-status dashboard-status--green">+12.4%</span>
+            </div>
+            <div class="dashboard-chart" role="img" aria-label="Weekly revenue chart showing growth from week one to week six">
+              <div class="dashboard-chart__item"><div class="dashboard-chart__bar" style="--bar-height:48%"></div><span>W1</span></div>
+              <div class="dashboard-chart__item"><div class="dashboard-chart__bar" style="--bar-height:64%"></div><span>W2</span></div>
+              <div class="dashboard-chart__item"><div class="dashboard-chart__bar" style="--bar-height:57%"></div><span>W3</span></div>
+              <div class="dashboard-chart__item"><div class="dashboard-chart__bar" style="--bar-height:82%"></div><span>W4</span></div>
+              <div class="dashboard-chart__item"><div class="dashboard-chart__bar" style="--bar-height:71%"></div><span>W5</span></div>
+              <div class="dashboard-chart__item"><div class="dashboard-chart__bar" style="--bar-height:92%"></div><span>W6</span></div>
+            </div>
+          </section>
+
+          <section class="dashboard-card" aria-labelledby="orders-title">
+            <div class="dashboard-card__head"><div><h2 id="orders-title">Order mix</h2><p>328 total orders</p></div></div>
+            <div class="dashboard-donut" aria-label="62 percent delivered, 22 percent shipped, 16 percent pending"><span>328</span></div>
+            <ul class="dashboard-legend">
+              <li><span><i></i>Delivered</span><strong>62%</strong></li>
+              <li><span><i style="background:var(--accent-500)"></i>Shipped</span><strong>22%</strong></li>
+              <li><span><i style="background:var(--gold-500)"></i>Pending</span><strong>16%</strong></li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="dashboard-content-grid">
+          <section class="dashboard-card" id="orders" aria-labelledby="recent-orders-title">
+            <div class="dashboard-card__head">
+              <div><h2 id="recent-orders-title">Recent orders</h2><p>Latest purchases across every channel.</p></div>
+              <a class="dashboard-card__link" href="admin-orders.html">View all <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+            </div>
+            <div class="dashboard-table-wrap">
+              <table class="dashboard-table" aria-label="Recent customer orders">
+                <thead><tr><th>Customer</th><th>Order</th><th>Total</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Jamie Davis</strong></td><td>#PW-10428</td><td>$78.40</td><td><span class="dashboard-status dashboard-status--blue">Shipped</span></td></tr>
+                  <tr><td><strong>Maya Patel</strong></td><td>#PW-10427</td><td>$146.20</td><td><span class="dashboard-status dashboard-status--orange">Processing</span></td></tr>
+                  <tr><td><strong>Noah Williams</strong></td><td>#PW-10426</td><td>$54.00</td><td><span class="dashboard-status dashboard-status--green">Delivered</span></td></tr>
+                  <tr><td><strong>Sofia Garcia</strong></td><td>#PW-10425</td><td>$92.75</td><td><span class="dashboard-status dashboard-status--red">Payment issue</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="dashboard-card" id="inventory" aria-labelledby="inventory-title">
+            <div class="dashboard-card__head">
+              <div><h2 id="inventory-title">Low stock</h2><p>Products needing attention.</p></div>
+              <a class="dashboard-card__link" href="admin-inventory.html">Manage <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+            </div>
+            <div class="dashboard-stock">
+              <article class="dashboard-stock__item">
+                <div><h4>Wild Meadow Food</h4><p>SKU PW-NUT-104</p></div><span class="dashboard-status dashboard-status--red">4 left</span>
+              </article>
+              <article class="dashboard-stock__item">
+                <div><h4>Rope Chew Bundle</h4><p>SKU PW-TOY-218</p></div><span class="dashboard-status dashboard-status--orange">7 left</span>
+              </article>
+              <article class="dashboard-stock__item">
+                <div><h4>Wanderer Wand Trio</h4><p>SKU PW-CAT-077</p></div><span class="dashboard-status dashboard-status--orange">9 left</span>
+              </article>
+              <article class="dashboard-stock__item">
+                <div><h4>Cloud Rest Bed</h4><p>SKU PW-BED-042</p></div><span class="dashboard-status dashboard-status--red">3 left</span>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <section class="dashboard-card mt-l" id="customers" aria-labelledby="customers-title">
+          <div class="dashboard-card__head">
+            <div><h2 id="customers-title">Customer insights</h2><p>Your most recently active pet parents.</p></div>
+            <a class="dashboard-card__link" href="admin-customers.html">View all <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+          </div>
+          <div class="dashboard-table-wrap">
+            <table class="dashboard-table" aria-label="Recent customers">
+              <thead><tr><th>Customer</th><th>Orders</th><th>Total spent</th><th>Last order</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Jamie Davis</strong></td><td>12</td><td>$684.20</td><td>Today</td></tr>
+                <tr><td><strong>Maya Patel</strong></td><td>8</td><td>$512.80</td><td>Yesterday</td></tr>
+                <tr><td><strong>Noah Williams</strong></td><td>5</td><td>$348.40</td><td>Sep 23, 2026</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="dashboard-card mt-l" id="settings" aria-labelledby="settings-title">
+          <div class="dashboard-card__head">
+            <div><h2 id="settings-title">Quick settings</h2><p>Common store administration tasks.</p></div>
+          </div>
+          <div class="flex gap-m wrap">
+            <a class="btn btn--outline" href="contact.html#form">Staff &amp; permissions</a>
+            <a class="btn btn--outline" href="services.html">Manage services</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

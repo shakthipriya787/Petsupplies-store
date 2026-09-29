@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin Settings — Paw &amp; Whisker Pet Supplies</title>
+<meta name="description" content="Manage Paw &amp; Whisker store settings, fulfilment preferences and team permissions." />
+<meta name="theme-color" content="#123a32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<main id="main" class="dashboard-page">
+  <div class="dashboard-frame">
+    <div class="dashboard-shell">
+      <div class="dashboard-mobilebar">
+        <a class="brand" href="admin-dashboard.html" aria-label="Stackly admin dashboard">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <button class="icon-btn dashboard-mobilebar__toggle" type="button" aria-expanded="false" aria-controls="dashboard-menu" aria-label="Open menu">
+          <i class="fa-solid fa-bars ico dashboard-toggle__open" aria-hidden="true" style="font-size:22px"></i>
+          <i class="fa-solid fa-xmark ico dashboard-toggle__close" aria-hidden="true" style="font-size:22px"></i>
+        </button>
+      </div>
+      <aside id="dashboard-menu" class="dashboard-sidebar dashboard-sidebar--admin" aria-label="Admin dashboard navigation">
+        <a class="brand" href="admin-dashboard.html" aria-label="Stackly admin dashboard">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+          <span class="brand__text">
+            <span class="brand__tag">Admin Console</span>
+          </span>
+        </a>
+
+        <nav class="dashboard-nav">
+          <a class="dashboard-nav__link" href="admin-dashboard.html">
+            <i class="fa-solid fa-table-cells-large ico" aria-hidden="true"></i>
+            Overview
+          </a>
+          <a class="dashboard-nav__link" href="admin-orders.html">
+            <i class="fa-solid fa-receipt ico" aria-hidden="true"></i>
+            Orders <span class="dashboard-nav__badge">18</span>
+          </a>
+          <a class="dashboard-nav__link" href="admin-inventory.html">
+            <i class="fa-solid fa-box ico" aria-hidden="true"></i>
+            Inventory
+          </a>
+          <a class="dashboard-nav__link" href="admin-customers.html">
+            <i class="fa-solid fa-users ico" aria-hidden="true"></i>
+            Customers
+          </a>
+          <a class="dashboard-nav__link" href="admin-settings.html" aria-current="page">
+            <i class="fa-solid fa-gear ico" aria-hidden="true"></i>
+            Settings
+          </a>
+        </nav>
+
+        <div class="dashboard-help">
+          <strong>System status</strong>
+          <p>All services are running normally.</p>
+          <a href="contact.html#form">Contact support <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="dashboard-sidebar__foot">
+          <a class="dashboard-logout" href="login.html" data-logout>
+            <i class="fa-solid fa-arrow-right-from-bracket ico" aria-hidden="true"></i>
+            Log out
+          </a>
+        </div>
+      </aside>
+
+      <div class="dashboard-main">
+        <section class="dashboard-topbar dashboard-page-topbar" aria-labelledby="admin-settings-title">
+          <div>
+            <span class="eyebrow">Admin console</span>
+            <h1 id="admin-settings-title">Settings</h1>
+            <p>Configure how your store, team and customer communications work.</p>
+          </div>
+          <div class="dashboard-topbar__actions">
+            <div class="dashboard-identity"><strong class="dashboard-identity__name" data-user-name>Alex Morgan</strong><span class="dashboard-identity__email" data-user-email>alex@gmail.com</span></div>
+            <span class="dashboard-avatar" data-user-avatar aria-label="Administrator Alex Morgan">AM</span>
+          </div>
+        </section>
+
+        <div class="dashboard-content-grid">
+          <div class="dashboard-stack">
+            <form class="form-card" data-validate data-success="Store settings saved.">
+              <div class="dashboard-card__head"><div><h2>Store profile</h2><p>Details shown across your customer experience.</p></div></div>
+              <div class="form-grid">
+                <div class="field field--full"><label for="store-name">Store name <span class="req">*</span></label><input id="store-name" name="storeName" type="text" value="Paw &amp; Whisker" required /><span class="err">Please enter a store name.</span></div>
+                <div class="field"><label for="store-email">Support email <span class="req">*</span></label><input id="store-email" name="supportEmail" type="email" value="hello@pawandwhisker.com" required /><span class="err">Please enter a valid email address.</span></div>
+                <div class="field"><label for="store-phone">Support phone</label><input id="store-phone" name="supportPhone" type="tel" value="+1 555 018 2200" /></div>
+                <div class="field field--full"><label for="store-address">Returns address</label><input id="store-address" name="returnsAddress" type="text" value="18 Willow Lane, Portland, OR 97205" /></div>
+                <div class="field field--full"><label for="store-description">Customer-facing description</label><textarea id="store-description" name="description">Premium pet supplies, gentle care and thoughtful essentials for every kind of companion.</textarea></div>
+              </div>
+              <button class="btn mt-l" type="submit">Save store profile</button>
+            </form>
+
+            <section class="dashboard-card" aria-labelledby="fulfilment-title">
+              <div class="dashboard-card__head"><div><h2 id="fulfilment-title">Fulfilment preferences</h2><p>Set sensible defaults for every order.</p></div></div>
+              <div class="admin-settings-list">
+                <div class="admin-settings-row"><span class="admin-settings-row__copy"><strong>Free delivery threshold</strong><small>Offer free standard delivery above this amount.</small></span><span class="field field--compact"><label class="sr-only" for="delivery-threshold">Free delivery threshold</label><input id="delivery-threshold" type="number" value="49" min="0" /></span></div>
+                <div class="admin-settings-row"><span class="admin-settings-row__copy"><strong>Processing time</strong><small>Typical time before an order is dispatched.</small></span><span class="field field--compact"><label class="sr-only" for="processing-time">Processing time</label><select id="processing-time"><option>1 business day</option><option>2 business days</option><option>3 business days</option></select></span></div>
+                <label class="admin-settings-row"><span class="admin-settings-row__copy"><strong>Low-stock alerts</strong><small>Notify the team when a product reaches its threshold.</small></span><input class="admin-switch" type="checkbox" checked aria-label="Enable low-stock alerts" /></label>
+              </div>
+            </section>
+          </div>
+
+          <aside class="dashboard-stack">
+            <section class="dashboard-card" aria-labelledby="team-title">
+              <div class="dashboard-card__head"><div><h2 id="team-title">Team permissions</h2><p>Who can manage the store.</p></div><span class="dashboard-status dashboard-status--green">4 members</span></div>
+              <div class="admin-permission-list">
+                <div class="admin-permission"><div><strong>Alex Morgan</strong><span>Owner · Full access</span></div><span class="dashboard-status dashboard-status--green">Active</span></div>
+                <div class="admin-permission"><div><strong>Jordan Lee</strong><span>Operations · Orders and stock</span></div><span class="dashboard-status dashboard-status--blue">Active</span></div>
+                <div class="admin-permission"><div><strong>Priya Shah</strong><span>Support · Customers only</span></div><span class="dashboard-status dashboard-status--blue">Active</span></div>
+                <div class="admin-permission"><div><strong>Sam Rivera</strong><span>Content · Products and pages</span></div><span class="dashboard-status dashboard-status--orange">Invited</span></div>
+              </div>
+              <a class="btn btn--outline btn--block mt-l" href="contact.html#form">Manage team</a>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="communication-title">
+              <div class="dashboard-card__head"><div><h2 id="communication-title">Customer communication</h2><p>Keep your team and pet parents informed.</p></div></div>
+              <div class="dashboard-check-list">
+                <label class="checkbox"><input type="checkbox" checked /><span><strong>Order confirmations</strong><small>Send a receipt after checkout.</small></span></label>
+                <label class="checkbox"><input type="checkbox" checked /><span><strong>Dispatch notifications</strong><small>Let customers know when orders leave us.</small></span></label>
+                <label class="checkbox"><input type="checkbox" checked /><span><strong>Low-stock alerts</strong><small>Send an internal alert to the buying team.</small></span></label>
+                <label class="checkbox"><input type="checkbox" /><span><strong>Weekly digest</strong><small>Receive a Monday sales and customer summary.</small></span></label>
+              </div>
+              <button class="btn btn--outline btn--block mt-l" type="button" data-notification-save>Save preferences</button>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog — Stackly Pet Supplies</title>
+<meta name="description" content="Vet-checked articles on pet nutrition, grooming, training, enrichment and adoption from the Stackly care team." />
+<meta name="theme-color" content="#123a32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Stackly home">
+      <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Main navigation">
+      <div class="nav__drawer-head">
+        <a class="brand" href="index.html" aria-label="Stackly home">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <button class="nav__drawer-close" type="button" aria-label="Close menu">
+          <i class="fa-solid fa-xmark ico" aria-hidden="true" style="font-size:20px"></i>
+        </button>
+      </div>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="services.html">Services</a></li>
+        <li><a class="nav__link" href="blog.html">Blog</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav__auth">
+        <a class="btn btn--outline" href="login.html">Log in</a>
+        <a class="btn btn--accent" href="signup.html">Sign up</a>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-auth header-auth--login" href="login.html">Log in</a>
+      <a class="header-auth header-auth--signup" href="signup.html">Sign up</a>
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <i class="fa-solid fa-bars ico" aria-hidden="true" style="font-size:22px"></i>
+      </button>
+    </div>
+  </div>
+  <div class="search-panel" id="searchPanel">
+    <div class="container">
+      <form class="search-panel__form" action="blog.html" method="get" role="search">
+        <i class="fa-solid fa-magnifying-glass ico" aria-hidden="true" style="font-size:20px"></i>
+        <input type="search" name="q" placeholder="Search food, toys, grooming, breed guides…" aria-label="Search products and articles" />
+        <button class="btn btn--sm" type="submit">Search</button>
+        <button class="icon-btn" type="button" id="searchClose" aria-label="Close search">
+          <i class="fa-solid fa-xmark ico" aria-hidden="true" style="font-size:18px"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ SECTION 1 : PAGE HERO ============ -->
+  <section class="page-hero" id="blog">
+    <div class="container page-hero__inner">
+      <div>
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span class="sep" aria-hidden="true">/</span><span aria-current="page">Blog</span>
+        </nav>
+        <span class="eyebrow" data-hero="eyebrow">The Paw &amp; Whisker journal</span>
+        <h1 data-hero="title">Advice You Can Actually Use</h1>
+        <p data-hero="text">No hype, no scare tactics — just vet-checked writing on food, behaviour, grooming and enrichment, written by the people who actually do the work.</p>
+        <div class="hero__cta" data-hero="cta">
+          <a class="btn" href="404.html">Read the Latest</a>
+          <a class="btn btn--outline" href="404.html">Browse by Topic</a>
+        </div>
+      </div>
+      <div class="page-hero__art" data-hero="visual">
+        <img src="assets/blog cat enrichment.webp" alt="Cat sitting beside a stack of books" width="800" height="640" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 2 : FEATURED POST ============ -->
+  <section class="section section--tight" id="featured">
+    <div class="container">
+      <article class="post--feature" data-reveal>
+        <div class="post--feature__media">
+          <img src="./assets/blog posts.webp" alt="Pet food bowls laid out for a balanced meal" />
+        </div>
+        <div class="post--feature__body">
+          <div class="flex gap-s wrap items-center">
+            <span class="tag tag--accent">Editor&rsquo;s pick</span>
+            <span class="tag">Nutrition</span>
+          </div>
+          <h2>The Complete 2026 Guide to Choosing Pet Food That Doesn&rsquo;t Disappoint You</h2>
+          <div class="post-meta">
+            <span><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:14px"></i> 14 min read</span>
+            <span>18 Mar 2026</span>
+            <span>4,102 views</span>
+          </div>
+          <p>Walking into a pet shop for the first time can be genuinely overwhelming: forty brands, four fonts, and a shelf of &ldquo;grain-free&rdquo; bags that all promise a perfect coat. Here is how our nutritionists cut through it — what to read first, which words to ignore, and the three questions worth asking before you spend a cent.</p>
+          <div class="flex gap-m wrap mt-l">
+            <a class="btn" href="404.html">Read the article
+              <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:18px"></i>
+            </a>
+            <a class="btn btn--outline" href="404.html">Book a Nutrition Review</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3 : LATEST POSTS + FILTER ============ -->
+  <section class="section section--cream" id="latest">
+    <div class="container">
+      <div class="sec-head sec-head--split" data-reveal>
+        <div>
+          <span class="eyebrow">Latest articles</span>
+          <h2>Fresh From the Care Team</h2>
+          <p class="lead max-620">Every piece is reviewed by a veterinarian before it goes live.</p>
+        </div>
+        <div class="filter-bar" data-filter-bar role="group" aria-label="Filter articles by topic">
+          <button class="is-active" type="button" data-filter="all">All</button>
+          <button type="button" data-filter="nutrition">Nutrition</button>
+          <button type="button" data-filter="grooming">Grooming</button>
+          <button type="button" data-filter="training">Training</button>
+          <button type="button" data-filter="adoption">Adoption</button>
+        </div>
+      </div>
+
+      <div class="grid g-fill" data-filter-grid data-stagger="0.07">
+        <article class="media-card post-card" data-cat="nutrition">
+          <div class="media-card__img">
+            <span class="tag tag--float">Nutrition</span>
+            <img src="./assets/blog nutrition1.webp" alt="Fresh vegetables and grains for a home-cooked pet meal" loading="lazy" />
+          </div>
+          <div class="media-card__body">
+            <div class="post-meta">
+              <span><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:14px"></i> 7 min</span><span>11 Mar 2026</span>
+            </div>
+            <h3 class="post-card__title"><a href="404.html">Wet food, dry food or fresh: what the research actually says</a></h3>
+            <p class="post-card__excerpt">Hydration matters more than marketing. A look at the evidence behind each format and the pets it suits best.</p>
+            <div class="post-card__foot">
+              <span class="post-meta mb-0">
+                <img class="avatar" style="width:34px;height:34px" src="assets/dr elena vasquez-sm.webp" alt="" loading="lazy" /> Dr. Elena Vasquez
+              </span>
+             
+            </div>
+          </div>
+        </article>
+
+        <article class="media-card post-card" data-cat="training">
+          <div class="media-card__img">
+            <span class="tag tag--float tag--accent">Training</span>
+            <img src="./assets/blog training.webp" alt="Dog training with a reward treat" loading="lazy" />
+          </div>
+          <div class="media-card__body">
+            <div class="post-meta">
+              <span><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:14px"></i> 9 min</span><span>6 Mar 2026</span>
+            </div>
+            <h3 class="post-card__title"><a href="404.html">Five signals your dog is overwhelmed (and what to do)</a></h3>
+            <p class="post-card__excerpt">Lip licking, whale eye, a sudden loss of interest — the subtle body language that comes before a full-on reaction.</p>
+            <div class="post-card__foot">
+              <span class="post-meta mb-0">
+                <img class="avatar" style="width:34px;height:34px" src="assets/avatar tom harker.webp" alt="" loading="lazy" /> Tom Harker
+              </span>
+              
+            </div>
+          </div>
+        </article>
+
+        <article class="media-card post-card" data-cat="grooming">
+          <div class="media-card__img">
+            <span class="tag tag--float tag--gold">Grooming</span>
+            <img src="assets/cat brushing.webp" alt="Brushing a cat's coat at home" loading="lazy" />
+          </div>
+          <div class="media-card__body">
+            <div class="post-meta">
+              <span><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:14px"></i> 6 min</span><span>28 Feb 2026</span>
+            </div>
+            <h3 class="post-card__title"><a href="404.html">Matting, dematting and the five-minute habit that prevents both</a></h3>
+            <p class="post-card__excerpt">A mat is a medical issue the moment it reaches the skin. Here is how to keep a double coat manageable year-round.</p>
+            <div class="post-card__foot">
+              <span class="post-meta mb-0">
+                <img class="avatar" style="width:34px;height:34px" src="assets/marcus reid-sm.webp" alt="" loading="lazy" /> Marcus Reid
+              </span>
+             
+            </div>
+          </div>
+        </article>
+
+        <article class="media-card post-card" data-cat="adoption">
+          <div class="media-card__img">
+            <span class="tag tag--float">Adoption</span>
+            <img src="assets/dogs greeting.webp" alt="Two rescue dogs meeting in a park" loading="lazy" />
+          </div>
+          <div class="media-card__body">
+            <div class="post-meta">
+              <span><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:14px"></i> 8 min</span><span>21 Feb 2026</span>
+            </div>
+            <h3 class="post-card__title"><a href="404.html">The first 72 hours with a rescue: a checklist that works</a></h3>
+            <p class="post-card__excerpt">A calm, structured arrival plan reduces settling time dramatically. Print this one and keep it on the fridge.</p>
+            <div class="post-card__foot">
+              <span class="post-meta mb-0">
+                <img class="avatar" style="width:34px;height:34px" src="assets/priya raman-sm.webp" alt="" loading="lazy" /> Priya Raman
+              </span>
+              
+            </div>
+          </div>
+        </article>
+
+        <article class="media-card post-card" data-cat="nutrition">
+          <div class="media-card__img">
+            <span class="tag tag--float tag--accent">Nutrition</span>
+            <img src="./assets/blog nutrition2.webp" alt="Bird eating fresh fruit from a dish" loading="lazy" />
+          </div>
+          <div class="media-card__body">
+            <div class="post-meta">
+              <span><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:14px"></i> 5 min</span><span>12 Feb 2026</span>
+            </div>
+            <h3 class="post-card__title"><a href="#latest">Seven foods that are quietly dangerous for pets</a></h3>
+            <p class="post-card__excerpt">Xylitol, grapes, onion and four more — plus what to do in the first ten minutes if one gets eaten.</p>
+            <div class="post-card__foot">
+              <span class="post-meta mb-0">
+                <img class="avatar" style="width:34px;height:34px" src="assets/dr elena vasquez-sm.webp" alt="" loading="lazy" /> Dr. Elena Vasquez
+              </span>
+              
+            </div>
+          </div>
+        </article>
+
+        <article class="media-card post-card" data-cat="grooming">
+          <div class="media-card__img">
+            <span class="tag tag--float tag--gold">Grooming</span>
+            <img src="assets/dog grooming.webp" alt="Professional nail trim on a dog" loading="lazy" />
+          </div>
+          <div class="media-card__body">
+            <div class="post-meta">
+              <span><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:14px"></i> 4 min</span><span>4 Feb 2026</span>
+            </div>
+            <h3 class="post-card__title"><a href="#latest">Nail trimming without the drama</a></h3>
+            <p class="post-card__excerpt">A two-minute daily routine that makes the clippers boring rather than frightening.</p>
+            <div class="post-card__foot">
+              <span class="post-meta mb-0">
+                <img class="avatar" style="width:34px;height:34px" src="assets/marcus reid-sm.webp" alt="" loading="lazy" /> Marcus Reid
+              </span>
+             
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="text-center muted mt-l" data-filter-empty style="display:none">No articles in this topic yet — check back soon.</p>
+    </div>
+  </section>
+
+       
+
+  <!-- ============ SECTION 5 : TOPICS / TAG CLOUD ============ -->
+  <section class="section section--cream" id="topics">
+    <div class="container">
+      <div class="sec-head sec-head--center max-720 sec-head" data-reveal>
+        <span class="eyebrow">Explore by topic</span>
+        <h2>Find What You Need Right Now</h2>
+        <p class="lead">From a new puppy to a senior cat, jump straight to the subject you need help with.</p>
+      </div>
+      <div class="tag-cloud" data-stagger="0.04" style="justify-content:center">
+        <a href="404.html" class="is-active">All articles</a>
+        <a href="404.html">Choosing food</a>
+        <a href="404.html">Puppies</a>
+        <a href="404.html">Kittens</a>
+        <a href="404.html">Senior pets</a>
+        <a href="404.html">Grooming at home</a>
+        <a href="404.html">Nail care</a>
+        <a href="404.html">Behaviour</a>
+        <a href="404.html">Recall training</a>
+        <a href="404.html">Enrichment games</a>
+        <a href="404.html">Rescue adoption</a>
+        <a href="404.html">First aid</a>
+        <a href="404.html">Dental health</a>
+        <a href="404.html">Weight management</a>
+        <a href="404.html">Aquarium care</a>
+        <a href="404.html">Bird nutrition</a>
+        <a href="404.html">Small mammals</a>
+        <a href="404.html">Travel &amp; carriers</a>
+        <a href="404.html">Allergies</a>
+        <a href="404.html">Sustainable pet care</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 6 : SERIES / TABS ============ -->
+  <section class="section" id="series">
+    <div class="container">
+      <div class="sec-head sec-head--center max-720" data-reveal>
+        <span class="eyebrow">Step-by-step series</span>
+        <h2>Follow Along With Us</h2>
+        <p class="lead">Multi-part guides that take one stage at a time, so nothing gets skipped.</p>
+      </div>
+
+      <div data-tabs data-reveal>
+        <div class="tabs" role="tablist" aria-label="Guide series">
+          <button class="is-active" type="button" data-tab="puppy" role="tab" aria-selected="true">The New Puppy Series</button>
+          <button type="button" data-tab="cat" role="tab" aria-selected="false">First 30 Days With a Cat</button>
+          <button type="button" data-tab="senior" role="tab" aria-selected="false">Caring for Senior Dogs</button>
+        </div>
+
+        <div class="tab-panel is-active" data-panel="puppy">
+          <div class="grid g-3" data-stagger="0.08">
+            <article class="card">
+              <span class="tag tag--gold mb-0">Episode 1</span>
+              <h3 class="mt-l">The first 48 hours</h3>
+              <p>One room, one routine, no visitors. How to build a safe base that makes everything after easier.</p>
+              <a class="link-arrow mt-l" href="404.html">Read <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:16px"></i></a>
+            </article>
+            <article class="card">
+              <span class="tag tag--gold mb-0">Episode 2</span>
+              <h3 class="mt-l">Naming, toilet and the first walk</h3>
+              <p>Potty schedules, collar fit, harness choice and why your first walk should happen before or after a meal.</p>
+              <a class="link-arrow mt-l" href="404.html">Read <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:16px"></i></a>
+            </article>
+            <article class="card">
+              <span class="tag tag--gold mb-0">Episode 3</span>
+              <h3 class="mt-l">Bitey hours and brain games</h3>
+              <p>Decoding teething, redirecting safely and three enrichment games that take ten minutes to set up.</p>
+              <a class="link-arrow mt-l" href="404.html">Read <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:16px"></i></a>
+            </article>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="cat">
+          <div class="grid g-3" data-stagger="0.08">
+            <article class="card">
+              <span class="tag tag--accent mb-0">Day 1–7</span>
+              <h3 class="mt-l">Making the space theirs</h3>
+              <p>Resource placement, hiding places and why litter trays should never sit next to the food bowl.</p>
+              <a class="link-arrow mt-l" href="404.html">Read <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:16px"></i></a>
+            </article>
+            <article class="card">
+              <span class="tag tag--accent mb-0">Day 8–21</span>
+              <h3 class="mt-l">Play, scratch and routine</h3>
+              <p>Turning instinct into good habits: hunt, chase, climb, scratch — in that order, every day.</p>
+              <a class="link-arrow mt-l" href="404.html">Read <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:16px"></i></a>
+            </article>
+            <article class="card">
+              <span class="tag tag--accent mb-0">Day 22–30</span>
+              <h3 class="mt-l">Bonding and vet visits</h3>
+              <p>Carrier training that does not involve a struggle, plus the first check-up checklist to bring along.</p>
+              <a class="link-arrow mt-l" href="404.html">Read <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:16px"></i></a>
+            </article>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="senior">
+          <div class="grid g-3" data-stagger="0.08">
+            <article class="card">
+              <span class="tag mb-0">Chapter 1</span>
+              <h3 class="mt-l">Recognising the slow change</h3>
+              <p>Subtle signs of arthritis, hearing loss and cognitive decline — and which ones deserve a vet visit.</p>
+              <a class="link-arrow mt-l" href="404.html">Read <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:16px"></i></a>
+            </article>
+            <article class="card">
+              <span class="tag mb-0">Chapter 2</span>
+              <h3 class="mt-l">Nutrition for slower metabolisms</h3>
+              <p>Why most senior diets are over-supplemented, and what to look for instead.</p>
+              <a class="link-arrow mt-l" href="404.html">Read <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:16px"></i></a>
+            </article>
+            <article class="card">
+              <span class="tag mb-0">Chapter 3</span>
+              <h3 class="mt-l">Comfort, ramps and gentle exercise</h3>
+              <p>Non-slip flooring, low-impact activity and how to make an older home genuinely easier to live in.</p>
+              <a class="link-arrow mt-l" href="404.html">Read <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:16px"></i></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 7 : NEWSLETTER BAND ============ -->
+  <section class="section section--brand" id="subscribe">
+    <div class="paw-field" aria-hidden="true">
+      <span style="top:16%;left:8%;font-size:34px">🐾</span>
+      <span style="bottom:18%;right:12%;font-size:28px">🐾</span>
+    </div>
+    <div class="container rel">
+      <div class="sec-head sec-head--center max-720 sec-head" data-reveal>
+        <span class="eyebrow">Never miss an edition</span>
+        <h2>Get the Journal by Email</h2>
+        <p class="lead">One letter a week, written by our vets and groomers, plus early access to new guides and member-only discounts.</p>
+        <div class="flex gap-m wrap mt-l" style="justify-content:center">
+          <span class="tag" style="background:rgba(255,255,255,.12);color:#fff">18,400 readers</span>
+          <span class="tag" style="background:rgba(255,255,255,.12);color:#fff">Weekly</span>
+          <span class="tag" style="background:rgba(255,255,255,.12);color:#fff">No spam, ever</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 8 : CTA / ASK A VET ============ -->
+  <section class="section" id="ask">
+    <div class="container">
+      <div class="promo" data-reveal>
+        <div>
+          <span class="eyebrow">Reader questions</span>
+          <h2>Still Stuck? Ask a Real Expert</h2>
+          <p>Send us the question you&rsquo;d ask your vet and we&rsquo;ll answer it on the blog — anonymously, free, and with a citation. If it&rsquo;s urgent, we&rsquo;ll tell you to ring your practice immediately.</p>
+          <div class="flex gap-m wrap mt-l">
+            <a class="btn btn--light btn--lg" href="404.html">Ask a Question</a>
+            <a class="btn btn--ghost-light btn--lg" href="404.html">Book a Consultation</a>
+          </div>
+        </div>
+        <div class="promo__img" data-float="5.5">
+          <img src="assets/dr elena vasquez.webp" alt="Veterinary advisor writing a care note" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <p class="mt-l">A pet supplies store built by animal lovers for animal lovers. Vet-reviewed products, honest advice, and a 30-day happiness guarantee on every order.</p>
+        <div class="socials mt-l">
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook ico" aria-hidden="true" style="font-size:18px"></i></a>
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram ico" aria-hidden="true" style="font-size:18px"></i></a>
+          <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter ico" aria-hidden="true" style="font-size:16px"></i></a>
+          <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube ico" aria-hidden="true" style="font-size:18px"></i></a>
+         </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Departments</h5>
+        <ul class="footer-links">
+          <li><a href="404.html">Dog Supplies</a></li>
+          <li><a href="404.html">Cat Supplies</a></li>
+          <li><a href="404.html">Grooming Studio</a></li>
+          <li><a href="404.html">Nutrition Plans</a></li>
+          <li><a href="404.html">Adoption Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot ico" aria-hidden="true" style="font-size:17px"></i><span>MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</span></li>
+          <li><i class="fa-solid fa-phone ico" aria-hidden="true" style="font-size:17px"></i><span><a href="404.html">9876543210</a><br /><a href="404.html">hello@stackly.com</a></span></li>
+         <li><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:17px"></i><span>Mon–Sat 8am – 8pm<br />Sunday 10am – 5pm</span></li>
+  </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> Stackly Pet Supplies. All rights reserved.</p>
+      <nav aria-label="Legal">
+        <a href="404.html">Privacy</a><a href="404.html">Policy</a><a href="404.html">Terms</a><a href="404.html">Conditions</a>
+      </nav>
+      
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

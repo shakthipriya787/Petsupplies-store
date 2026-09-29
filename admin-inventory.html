@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin Inventory — Paw &amp; Whisker Pet Supplies</title>
+<meta name="description" content="Manage Paw &amp; Whisker products, stock levels and inventory alerts." />
+<meta name="theme-color" content="#123a32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<main id="main" class="dashboard-page">
+  <div class="dashboard-frame">
+    <div class="dashboard-shell">
+      <div class="dashboard-mobilebar">
+        <a class="brand" href="admin-dashboard.html" aria-label="Stackly admin dashboard">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <button class="icon-btn dashboard-mobilebar__toggle" type="button" aria-expanded="false" aria-controls="dashboard-menu" aria-label="Open menu">
+          <i class="fa-solid fa-bars ico dashboard-toggle__open" aria-hidden="true" style="font-size:22px"></i>
+          <i class="fa-solid fa-xmark ico dashboard-toggle__close" aria-hidden="true" style="font-size:22px"></i>
+        </button>
+      </div>
+      <aside id="dashboard-menu" class="dashboard-sidebar dashboard-sidebar--admin" aria-label="Admin dashboard navigation">
+        <a class="brand" href="admin-dashboard.html" aria-label="Stackly admin dashboard">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+          <span class="brand__text">
+            <span class="brand__tag">Admin Console</span>
+          </span>
+        </a>
+
+        <nav class="dashboard-nav">
+          <a class="dashboard-nav__link" href="admin-dashboard.html">
+            <i class="fa-solid fa-table-cells-large ico" aria-hidden="true"></i>
+            Overview
+          </a>
+          <a class="dashboard-nav__link" href="admin-orders.html">
+            <i class="fa-solid fa-receipt ico" aria-hidden="true"></i>
+            Orders <span class="dashboard-nav__badge">18</span>
+          </a>
+          <a class="dashboard-nav__link" href="admin-inventory.html" aria-current="page">
+            <i class="fa-solid fa-box ico" aria-hidden="true"></i>
+            Inventory
+          </a>
+          <a class="dashboard-nav__link" href="admin-customers.html">
+            <i class="fa-solid fa-users ico" aria-hidden="true"></i>
+            Customers
+          </a>
+          <a class="dashboard-nav__link" href="admin-settings.html">
+            <i class="fa-solid fa-gear ico" aria-hidden="true"></i>
+            Settings
+          </a>
+        </nav>
+
+        <div class="dashboard-help">
+          <strong>System status</strong>
+          <p>All services are running normally.</p>
+          <a href="contact.html#form">Contact support <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="dashboard-sidebar__foot">
+          <a class="dashboard-logout" href="login.html" data-logout>
+            <i class="fa-solid fa-arrow-right-from-bracket ico" aria-hidden="true"></i>
+            Log out
+          </a>
+        </div>
+      </aside>
+
+      <div class="dashboard-main">
+        <section class="dashboard-topbar dashboard-page-topbar" aria-labelledby="admin-inventory-title">
+          <div>
+            <span class="eyebrow">Admin console</span>
+            <h1 id="admin-inventory-title">Inventory</h1>
+            <p>Keep products available and stock levels accurate.</p>
+          </div>
+          <div class="dashboard-topbar__actions">
+            <a class="btn btn--accent btn--sm" href="#add-product">Add product</a>
+            <div class="dashboard-identity"><strong class="dashboard-identity__name" data-user-name>Alex Morgan</strong><span class="dashboard-identity__email" data-user-email>alex@gmail.com</span></div>
+            <span class="dashboard-avatar" data-user-avatar aria-label="Administrator Alex Morgan">AM</span>
+          </div>
+        </section>
+
+        <section class="dashboard-summary dashboard-summary--four" aria-label="Inventory summary">
+          <article class="dashboard-summary__item"><span class="dashboard-summary__icon" aria-hidden="true"><i class="fa-solid fa-box ico" aria-hidden="true"></i></span><div><strong>1,250</strong><span>Active products</span></div></article>
+          <article class="dashboard-summary__item dashboard-summary__item--accent"><span class="dashboard-summary__icon" aria-hidden="true"><i class="fa-solid fa-triangle-exclamation ico" aria-hidden="true"></i></span><div><strong>4</strong><span>Low-stock alerts</span></div></article>
+          <article class="dashboard-summary__item dashboard-summary__item--gold"><span class="dashboard-summary__icon" aria-hidden="true"><i class="fa-solid fa-clipboard-list ico" aria-hidden="true"></i></span><div><strong>12</strong><span>Out of stock</span></div></article>
+          <article class="dashboard-summary__item dashboard-summary__item--dark"><span class="dashboard-summary__icon" aria-hidden="true"><i class="fa-solid fa-dollar-sign ico" aria-hidden="true"></i></span><div><strong>$86,420</strong><span>Stock value</span></div></article>
+        </section>
+
+        <div class="dashboard-content-grid">
+          <div class="dashboard-stack">
+            <section class="dashboard-card" aria-labelledby="inventory-table-title">
+              <div class="dashboard-card__head"><div><h2 id="inventory-table-title">Product catalogue</h2><p>Stock levels and product details.</p></div><a class="dashboard-card__link" href="contact.html#form">Request report <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a></div>
+              <div class="dashboard-table-wrap"><table class="dashboard-table" aria-label="Product inventory"><thead><tr><th>Product</th><th>SKU</th><th>Category</th><th>On hand</th><th>Price</th><th>Status</th></tr></thead><tbody>
+                <tr><td><strong>Wild Meadow Dry Food</strong></td><td>PW-NUT-104</td><td>Nutrition</td><td>4</td><td>$32.99</td><td><span class="dashboard-status dashboard-status--red">Low stock</span></td></tr>
+                <tr><td><strong>Rope Chew Bundle</strong></td><td>PW-TOY-218</td><td>Toys</td><td>7</td><td>$18.50</td><td><span class="dashboard-status dashboard-status--orange">Reorder</span></td></tr>
+                <tr><td><strong>Wanderer Wand Trio</strong></td><td>PW-CAT-077</td><td>Toys</td><td>9</td><td>$16.75</td><td><span class="dashboard-status dashboard-status--orange">Reorder</span></td></tr>
+                <tr><td><strong>Cloud Rest Tunnel Bed</strong></td><td>PW-BED-042</td><td>Beds</td><td>3</td><td>$54.00</td><td><span class="dashboard-status dashboard-status--red">Low stock</span></td></tr>
+                <tr><td><strong>Calm Coat Shampoo</strong></td><td>PW-CAR-019</td><td>Grooming</td><td>42</td><td>$14.25</td><td><span class="dashboard-status dashboard-status--green">Healthy</span></td></tr>
+                <tr><td><strong>Berry Dental Chews</strong></td><td>PW-NUT-088</td><td>Nutrition</td><td>68</td><td>$12.90</td><td><span class="dashboard-status dashboard-status--green">Healthy</span></td></tr>
+              </tbody></table></div>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="category-title">
+              <div class="dashboard-card__head"><div><h2 id="category-title">Category breakdown</h2><p>Where your stock value sits.</p></div><span class="dashboard-status dashboard-status--blue">$86,420</span></div>
+              <div class="admin-progress-list">
+                <div class="admin-progress__row"><div><strong>Nutrition</strong><span>412 items</span></div><div class="admin-progress__bar"><span style="--progress:38%"></span></div></div>
+                <div class="admin-progress__row"><div><strong>Toys</strong><span>318 items</span></div><div class="admin-progress__bar"><span style="--progress:29%"></span></div></div>
+                <div class="admin-progress__row"><div><strong>Beds &amp; habitat</strong><span>164 items</span></div><div class="admin-progress__bar"><span style="--progress:18%"></span></div></div>
+                <div class="admin-progress__row"><div><strong>Grooming</strong><span>121 items</span></div><div class="admin-progress__bar"><span style="--progress:15%"></span></div></div>
+              </div>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="movements-title">
+              <div class="dashboard-card__head"><div><h2 id="movements-title">Recent stock movements</h2><p>Adjustments logged by your team.</p></div><a class="dashboard-card__link" href="admin-orders.html">View log <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a></div>
+              <div class="admin-alert-list">
+                <div class="admin-alert"><div><strong>Wild Meadow Dry Food</strong><span>Restocked 24 units · 2 hours ago</span></div><span class="dashboard-status dashboard-status--green">+24</span></div>
+                <div class="admin-alert"><div><strong>Calm Coat Shampoo</strong><span>Count correction · yesterday</span></div><span class="dashboard-status dashboard-status--blue">Audit</span></div>
+                <div class="admin-alert"><div><strong>Cloud Rest Tunnel Bed</strong><span>2 units damaged in transit</span></div><span class="dashboard-status dashboard-status--red">-2</span></div>
+                <div class="admin-alert"><div><strong>Wanderer Wand Trio</strong><span>Reserved for open order #PW-10428</span></div><span class="dashboard-status dashboard-status--orange">-3</span></div>
+              </div>
+            </section>
+          </div>
+
+          <aside class="dashboard-stack">
+            <form class="form-card" id="add-product" data-validate data-success="Product details saved.">
+              <div class="dashboard-card__head"><div><h2>Add product</h2><p>Create a catalogue item for the store.</p></div></div>
+              <div class="form-grid">
+                <div class="field field--full"><label for="product-name">Product name <span class="req">*</span></label><input id="product-name" name="productName" type="text" placeholder="e.g. Ocean Dental Chews" required /><span class="err">Please enter a product name.</span></div>
+                <div class="field"><label for="product-sku">SKU <span class="req">*</span></label><input id="product-sku" name="sku" type="text" placeholder="PW-NUT-000" required /><span class="err">Please enter a SKU.</span></div>
+                <div class="field"><label for="product-price">Price <span class="req">*</span></label><input id="product-price" name="price" type="number" min="0" step="0.01" placeholder="0.00" required /><span class="err">Please enter a price.</span></div>
+                <div class="field field--full"><label for="product-category">Category <span class="req">*</span></label><select id="product-category" name="category" required><option value="">Choose a category</option><option>Nutrition</option><option>Toys</option><option>Beds</option><option>Grooming</option><option>Accessories</option></select><span class="err">Please choose a category.</span></div>
+                <div class="field"><label for="product-stock">Opening stock</label><input id="product-stock" name="stock" type="number" min="0" value="0" /></div>
+                <div class="field"><label for="product-status">Status</label><select id="product-status" name="status"><option>Active</option><option>Draft</option><option>Archived</option></select></div>
+              </div>
+              <button class="btn btn--block mt-l" type="submit">Save product</button>
+            </form>
+
+            <section class="dashboard-card" aria-labelledby="stock-alerts-title">
+              <div class="dashboard-card__head"><div><h2 id="stock-alerts-title">Stock alerts</h2><p>Products that need attention.</p></div><span class="dashboard-status dashboard-status--red">4 open</span></div>
+              <div class="admin-alert-list">
+                <div class="admin-alert"><div><strong>Wild Meadow Dry Food</strong><span>4 units remaining</span></div><span class="dashboard-status dashboard-status--red">Critical</span></div>
+                <div class="admin-alert"><div><strong>Cloud Rest Tunnel Bed</strong><span>3 units remaining</span></div><span class="dashboard-status dashboard-status--red">Critical</span></div>
+                <div class="admin-alert"><div><strong>Rope Chew Bundle</strong><span>7 units remaining</span></div><span class="dashboard-status dashboard-status--orange">Reorder</span></div>
+                <div class="admin-alert"><div><strong>Wanderer Wand Trio</strong><span>9 units remaining</span></div><span class="dashboard-status dashboard-status--orange">Reorder</span></div>
+              </div>
+              <a class="btn btn--outline btn--block mt-l" href="contact.html#form">Contact suppliers</a>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

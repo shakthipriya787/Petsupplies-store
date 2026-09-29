@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services —  Stackly Pet Supplies</title>
+<meta name="description" content="Pet care services from Stackly: professional grooming, bespoke nutrition plans, puppy training classes, home visits, adoption support and same-day delivery." />
+<meta name="theme-color" content="#123a32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Stackly home">
+      <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Main navigation">
+      <div class="nav__drawer-head">
+        <a class="brand" href="index.html" aria-label="Stackly home">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <button class="nav__drawer-close" type="button" aria-label="Close menu">
+          <i class="fa-solid fa-xmark ico" aria-hidden="true" style="font-size:20px"></i>
+        </button>
+      </div>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="services.html">Services</a></li>
+        <li><a class="nav__link" href="blog.html">Blog</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav__auth">
+        <a class="btn btn--outline" href="login.html">Log in</a>
+        <a class="btn btn--accent" href="signup.html">Sign up</a>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-auth header-auth--login" href="login.html">Log in</a>
+      <a class="header-auth header-auth--signup" href="signup.html">Sign up</a>
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <i class="fa-solid fa-bars ico" aria-hidden="true" style="font-size:22px"></i>
+      </button>
+    </div>
+  </div>
+  <div class="search-panel" id="searchPanel">
+    <div class="container">
+      <form class="search-panel__form" action="blog.html" method="get" role="search">
+        <i class="fa-solid fa-magnifying-glass ico" aria-hidden="true" style="font-size:20px"></i>
+        <input type="search" name="q" placeholder="Search food, toys, grooming, breed guides…" aria-label="Search products and articles" />
+        <button class="btn btn--sm" type="submit">Search</button>
+        <button class="icon-btn" type="button" id="searchClose" aria-label="Close search">
+          <i class="fa-solid fa-xmark ico" aria-hidden="true" style="font-size:18px"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ SECTION 1 : PAGE HERO ============ -->
+  <section class="page-hero" id="services">
+    <div class="container page-hero__inner">
+      <div>
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span class="sep" aria-hidden="true">/</span><span aria-current="page">Services</span>
+        </nav>
+        <span class="eyebrow" data-hero="eyebrow">Care beyond the checkout</span>
+        <h1 data-hero="title">Professional Pet Care, Booked in Minutes</h1>
+        <p data-hero="text">From a nail trim to a full behaviour programme, our certified team looks after dogs, cats and small companions with the same standard we would want for our own.</p>
+        <div class="hero__cta" data-hero="cta">
+          <a class="btn" href="404.html">Book an Appointment</a>
+          <a class="btn btn--outline" href="404.html">Read the FAQs</a>
+        </div>
+      </div>
+      <div class="page-hero__art page-hero__art--tall" data-hero="visual">
+        <img src="./assets/services hero.webp" alt="A dog being calmly groomed by a professional" width="800" height="880" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 2 : SERVICE OVERVIEW ============ -->
+  <section class="section section--tight" id="overview">
+    <div class="container">
+      <div class="grid g-4" data-stagger="0.08">
+        <div class="stat-box">
+          <span class="card-icon" style="margin-inline:auto" aria-hidden="true"><i class="fa-solid fa-calendar-days ico" aria-hidden="true"></i></span>
+          <span class="stat-num" data-count="6" data-suffix="">0</span>
+          <p>Core services</p>
+        </div>
+        <div class="stat-box">
+          <span class="card-icon card-icon--accent" style="margin-inline:auto" aria-hidden="true"><i class="fa-regular fa-clock ico" aria-hidden="true"></i></span>
+          <span class="stat-num" data-count="24" data-suffix="h">0</span>
+          <p>Average booking time</p>
+        </div>
+        <div class="stat-box">
+          <span class="card-icon card-icon--gold" style="margin-inline:auto" aria-hidden="true"><i class="fa-solid fa-user ico" aria-hidden="true"></i></span>
+          <span class="stat-num" data-count="9" data-suffix="">0</span>
+          <p>Certified specialists</p>
+        </div>
+        <div class="stat-box">
+          <span class="card-icon" style="margin-inline:auto" aria-hidden="true"><i class="fa-solid fa-star ico" aria-hidden="true"></i></span>
+          <span class="stat-num" data-count="4.9" data-decimals="1">0</span>
+          <p>Service rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3 : CORE SERVICES ============ -->
+  <section class="section section--cream" id="core">
+    <div class="container">
+      <div class="sec-head sec-head--center max-760 sec-head" data-reveal>
+        <span class="eyebrow">What we offer</span>
+        <h2>Six Services, One Standard of Care</h2>
+        <p class="lead">Every appointment is one-to-one, unhurried and handled by a certified professional who will tell you honestly if your pet needs a vet instead.</p>
+      </div>
+
+      <div class="grid g-3" data-stagger="0.08">
+        <article class="card card--media">
+          <div class="card__img">
+            <img src="./assets/services spa.webp" alt="Dog being brushed and groomed in the studio" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-scissors ico" aria-hidden="true"></i></span>
+            <h3>Full Grooming &amp; Spa</h3>
+            <p>Bath, blow-dry, haircut, nail trim, ear clean and paw balm — with a calm, one-pet-at-a-time studio and photos sent after every visit.</p>
+            <ul class="check-list" style="margin-top:1rem">
+              <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i><span>Breed-standard or bespoke cut</span></li>
+              <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i><span>Skin-safe, pH-balanced products</span></li>
+            </ul>
+            <div class="product__foot" style="margin-top:auto">
+              <span class="price">From $45</span>
+              <a class="btn btn--sm" href="404.html">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--media">
+          <div class="card__img">
+            <img src="./assets/services nutrition.webp" alt="Bag of premium dry pet food with kibble" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card-icon card-icon--accent" aria-hidden="true"><i class="fa-solid fa-heart-pulse ico" aria-hidden="true"></i></span>
+            <h3>Nutrition Planning</h3>
+            <p>A certified nutritionist reviews body condition, activity and budget, then builds a portion-controlled plan with a transition schedule.</p>
+            <ul class="check-list" style="margin-top:1rem">
+              <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i><span>Medical diet support</span></li>
+              <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i><span>Free monthly plan check-ins</span></li>
+            </ul>
+            <div class="product__foot" style="margin-top:auto">
+              <span class="price">From $29</span>
+              <a class="btn btn--sm" href="404.html">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--media">
+          <div class="card__img">
+            <img src="./assets/services training.webp" alt="Reward training a dog with a treat" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card-icon card-icon--gold" aria-hidden="true"><i class="fa-solid fa-shield-halved ico" aria-hidden="true"></i></span>
+            <h3>Training &amp; Behaviour</h3>
+            <p>Force-free classes for puppies, adolescents and rescues, plus one-to-one behaviour sessions led by an accredited reward trainer.</p>
+            <ul class="check-list" style="margin-top:1rem">
+              <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i><span>Max four dogs per class</span></li>
+              <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i><span>Written progress plan included</span></li>
+            </ul>
+            <div class="product__foot" style="margin-top:auto">
+              <span class="price">From $25</span>
+              <a class="btn btn--sm" href="404.html">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--media">
+          <div class="card__img">
+            <img src="assets/services cat boarding.webp" alt="Cat resting peacefully at home" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-house ico" aria-hidden="true"></i></span>
+            <h3>At-Home Visits</h3>
+            <p>Feeding, fresh water, litter refresh, exercise and a photo update while you&rsquo;re away — ideal for cats and senior pets.</p>
+            <ul class="check-list" style="margin-top:1rem">
+              <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i><span>Key safe &amp; ID-checked staff</span></li>
+              <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i><span>Live photo after each visit</span></li>
+            </ul>
+            <div class="product__foot" style="margin-top:auto">
+              <span class="price">From $22</span>
+              <a class="btn btn--sm" href="404.html">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--media">
+          <div class="card__img">
+            <img src="./assets/services adoption.webp" alt="Two rescue dogs meeting outdoors" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card-icon card-icon--accent" aria-hidden="true"><i class="fa-solid fa-shield ico" aria-hidden="true"></i></span>
+            <h3>Adoption Matching</h3>
+            <p>A free, no-pressure matching service with three partner shelters — plus a starter kit and six months of nutrition advice.</p>
+            <ul class="check-list" style="margin-top:1rem">
+              <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i><span>Temperament-matched, not breed-matched</span></li>
+              <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i><span>Founder-funded adoption support</span></li>
+            </ul>
+            <div class="product__foot" style="margin-top:auto">
+              <span class="price">Free</span>
+              <a class="btn btn--sm" href="404.html">Register</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--media">
+          <div class="card__img">
+            <img src="assets/store aisles.webp" alt="Packed pet supply order ready for delivery" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card-icon card-icon--gold" aria-hidden="true"><i class="fa-solid fa-truck ico" aria-hidden="true"></i></span>
+            <h3>Same-Day Delivery</h3>
+            <p>Order before 2pm and your supplies arrive in a reusable, plastic-free box — with a hand-written care note for first orders.</p>
+            <ul class="check-list" style="margin-top:1rem">
+              <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i><span>Free over $49, tracked in real time</span></li>
+              <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i><span>Refill box collection included</span></li>
+            </ul>
+            <div class="product__foot" style="margin-top:auto">
+              <span class="price">From $4.95</span>
+              <a class="btn btn--sm" href="404.html">Track Order</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 4 : HOW IT WORKS ============ -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="sec-head sec-head--center max-760 sec-head" data-reveal>
+        <span class="eyebrow">How it works</span>
+        <h2>Four Steps, Zero Stress</h2>
+        <p class="lead">Booking takes under two minutes and you will always know exactly who is looking after your pet.</p>
+      </div>
+      <div class="grid g-4 steps" data-stagger="0.1">
+        <div class="step">
+          <h4>Tell us about your pet</h4>
+          <p>Breed, age, weight, temperament and any sensitivities. Takes about ninety seconds.</p>
+        </div>
+        <div class="step">
+          <h4>Pick a service &amp; time</h4>
+          <p>Choose from real-time availability, including same-day slots before 2pm.</p>
+        </div>
+        <div class="step">
+          <h4>Confirm &amp; relax</h4>
+          <p>We confirm instantly, remind you the day before and text when your specialist is on the way.</p>
+        </div>
+        <div class="step">
+          <h4>Receive photos &amp; notes</h4>
+          <p>A full photo set and care notes land in your inbox, plus a follow-up check the next day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 5 : FEATURED / GROOMING SHOWCASE ============ -->
+  <section class="section section--dark" id="spotlight">
+    <div class="container">
+      <div class="split split--rev">
+        <div class="split__media" data-reveal="left">
+          <img src="assets/services cat spa.webp" alt="Calm cat resting after a spa session" loading="lazy" />
+          <div class="split__badge" data-float="4.5"><strong>1:1</strong><span>One pet per groomer</span></div>
+        </div>
+        <div data-reveal="right">
+          <span class="eyebrow">Service spotlight</span>
+          <h2>The Calm Grooming Studio</h2>
+          <p class="lead">Most dogs hate the groomer. Not because of us — because of the noise, the hurry and the strangers. So we rebuilt our studio around one idea: less is more.</p>
+          <p>Two appointment slots run at a time instead of six, each room is treated with a pheromone diffuser, and the dryer runs at a frequency most dogs stop reacting to within a session. Nervous dogs are given a fifteen-minute settling period with no handling at all, and we will happily split a full groom across two visits rather than rush your pet.</p>
+          <ul class="check-list" style="color:var(--brand-100)">
+            <li style="color:var(--brand-100)"><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i><span style="color:var(--brand-100)"><strong style="color:#fff">Breakable appointments.</strong> Pay for the time your pet actually needs, not a fixed slot.</span></li>
+            <li style="color:var(--brand-100)"><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i><span style="color:var(--brand-100)"><strong style="color:#fff">Fear-free certified.</strong> Every groomer is trained in low-stress handling.</span></li>
+            <li style="color:var(--brand-100)"><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i><span style="color:var(--brand-100)"><strong style="color:#fff">Photo record.</strong> Timestamped before-and-after images, kept in your pet&rsquo;s file.</span></li>
+          </ul>
+          <div class="flex gap-m wrap mt-l">
+            <a class="btn btn--accent" href="404.html">Book the Spa</a>
+            <a class="btn btn--ghost-light" href="404.html">Read the Grooming Guide</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 6 : PACKAGES & PRICING ============ -->
+  <section class="section section--cream" id="packages">
+    <div class="container">
+      <div class="sec-head sec-head--center max-760 sec-head" data-reveal>
+        <span class="eyebrow">Packages</span>
+        <h2>Simple Bundles, No Hidden Fees</h2>
+        <p class="lead">Pay per visit or subscribe and save. Every package includes the consultation, photo record and aftercare check-in.</p>
+      </div>
+      <div class="grid g-3 items-center" data-stagger="0.1">
+        <article class="price-card">
+          <h3>The Essentials</h3>
+          <p class="price-card__desc">For quick, tidy-up visits</p>
+          <div class="price-card__price">$45 <span>/ visit</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:17px"></i> Bath &amp; blow-dry</li>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:17px"></i> Nail trim &amp; paw balm</li>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:17px"></i> Ear clean</li>
+            <li class="is-off"><i class="fa-solid fa-xmark ico" aria-hidden="true" style="font-size:17px"></i> Breed-standard haircut</li>
+          </ul>
+          <a class="btn btn--outline btn--block" href="404.html">Choose Essentials</a>
+        </article>
+
+        <article class="price-card price-card--featured">
+          <span class="price-card__flag">Most loved</span>
+          <h3>The Full Spa</h3>
+          <p class="price-card__desc">Our complete in-studio experience</p>
+          <div class="price-card__price">$89 <span>/ visit</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:17px"></i> Everything in Essentials</li>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:17px"></i> Hand-dry &amp; brush-out</li>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:17px"></i> Teeth brushing &amp; breath gel</li>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:17px"></i> Custom breed or style cut</li>
+          </ul>
+          <a class="btn btn--block" href="404.html">Choose Full Spa</a>
+        </article>
+
+        <article class="price-card">
+          <h3>Care Club</h3>
+          <p class="price-card__desc">Monthly plan, best value</p>
+          <div class="price-card__price">$59 <span>/ month</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:17px"></i> One Full Spa visit</li>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:17px"></i> Two at-home visits</li>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:17px"></i> Nutrition plan &amp; 10% off food</li>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:17px"></i> Priority weekend booking</li>
+          </ul>
+          <a class="btn btn--outline btn--block" href="404.html">Join Care Club</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 7 : FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="grid g-2 items-start" style="gap:clamp(1.5rem,4vw,3.5rem)">
+        <div data-reveal="left">
+          <span class="eyebrow">Good to know</span>
+          <h2>Frequently Asked Questions</h2>
+          <p class="lead">Still unsure? Our care coaches answer the phone seven days a week — no call centre, no hold music.</p>
+          <img class="mt-l" style="border-radius:var(--radius-xl);box-shadow:var(--shadow);width:100%" src="assets/services care coach.webp" alt="Care coach holding a small dog in the studio" loading="lazy" />
+          <a class="btn mt-l" href="404.html">Ask a Question</a>
+        </div>
+
+        <div class="accordion" data-reveal="right">
+          <div class="acc-item">
+            <button class="acc-btn" type="button">Do I need a vaccination record?
+              <span class="acc-btn__icon" aria-hidden="true"><i class="fa-solid fa-chevron-down ico" aria-hidden="true" style="font-size:18px"></i></span>
+            </button>
+            <div class="acc-panel"><div class="acc-panel__inner">For in-studio grooming we ask for proof of current rabies and core vaccinations. For at-home visits we ask for the same, plus a signed key authorisation. We keep your record on file so you only send it once.</div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn" type="button">What if my pet is nervous or reactive?
+              <span class="acc-btn__icon" aria-hidden="true"><i class="fa-solid fa-chevron-down ico" aria-hidden="true" style="font-size:18px"></i></span>
+            </button>
+            <div class="acc-panel"><div class="acc-panel__inner">Tell us at booking and we will allocate one of our fear-free certified groomers, extend the appointment and start with a fifteen-minute settling period with no handling. If your pet would benefit, we will split the groom across two visits at no extra cost.</div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn" type="button">Can I reschedule or cancel?
+              <span class="acc-btn__icon" aria-hidden="true"><i class="fa-solid fa-chevron-down ico" aria-hidden="true" style="font-size:18px"></i></span>
+            </button>
+            <div class="acc-panel"><div class="acc-panel__inner">Free up to 24 hours before your slot, any time, from the link in your confirmation email. Inside 24 hours we ask for a small fee because the slot cannot be refilled — but if your pet is unwell, we always waive it, no questions asked.</div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn" type="button">Do you offer services for cats and small pets?
+              <span class="acc-btn__icon" aria-hidden="true"><i class="fa-solid fa-chevron-down ico" aria-hidden="true" style="font-size:18px"></i></span>
+            </button>
+            <div class="acc-panel"><div class="acc-panel__inner">Yes. Cats get a quiet appointment-only slot with a low-stimulation room. Small pets — rabbits, guinea pigs, birds and small mammals — are welcome for diet reviews, habitat advice and nail/beak trims by appointment.</div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn" type="button">Is delivery really free over $49?
+              <span class="acc-btn__icon" aria-hidden="true"><i class="fa-solid fa-chevron-down ico" aria-hidden="true" style="font-size:18px"></i></span>
+            </button>
+            <div class="acc-panel"><div class="acc-panel__inner">Free standard delivery on orders over $49, and free carbon-neutral express on orders over $120. Below that it is a flat $4.95, or $2.95 if you collect from the Willow Lane store.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 8 : BOOKING CTA ============ -->
+  <section class="section section--cream" id="booking">
+    <div class="container">
+      <div class="grid g-2 items-center" style="gap:clamp(1.5rem,4vw,3.5rem)">
+        <div data-reveal="left">
+          <span class="eyebrow">Book now</span>
+          <h2>Reserve Your Slot in Two Minutes</h2>
+          <p class="lead">Tell us who we&rsquo;re looking after and we&rsquo;ll match the right specialist, the right room and the right amount of time.</p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i><span>Confirmation within minutes, not days</span></li>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i><span>Reminder the day before every appointment</span></li>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i><span>Free to reschedule up to 24 hours before</span></li>
+          </ul>
+          <div class="flex gap-m wrap mt-l">
+            <a class="btn btn--lg" href="404.html">
+              Book an Appointment
+              <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:18px"></i>
+            </a>
+            <a class="btn btn--outline btn--lg" href="404.html">Call 9876543210</a>
+            <a class="btn btn--accent btn--lg" href="404.html" target="_blank" rel="noopener">WhatsApp Us</a>
+          </div>
+        </div>
+
+        <div data-reveal="right">
+          <img style="border-radius:var(--radius-xl);box-shadow:var(--shadow);width:100%" src="assets/services studio cat.webp" alt="Cat relaxing during a studio visit" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <p class="mt-l">A pet supplies store built by animal lovers for animal lovers. Vet-reviewed products, honest advice, and a 30-day happiness guarantee on every order.</p>
+        <div class="socials mt-l">
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook ico" aria-hidden="true" style="font-size:18px"></i></a>
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram ico" aria-hidden="true" style="font-size:18px"></i></a>
+          <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter ico" aria-hidden="true" style="font-size:16px"></i></a>
+          <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube ico" aria-hidden="true" style="font-size:18px"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Departments</h5>
+        <ul class="footer-links">
+          <li><a href="404.html">Dog Supplies</a></li>
+          <li><a href="404.html">Cat Supplies</a></li>
+          <li><a href="404.html">Grooming Studio</a></li>
+          <li><a href="404.html">Nutrition Plans</a></li>
+          <li><a href="404.html">Adoption Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot ico" aria-hidden="true" style="font-size:17px"></i><span>MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</span></li>
+          <li><i class="fa-solid fa-phone ico" aria-hidden="true" style="font-size:17px"></i><span><a href="404.html">9876543210</a><br /><a href="404.html">hello@stackly.com</a></span></li>
+          <li><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:17px"></i><span>Mon–Sat 8am – 8pm<br />Sunday 10am – 5pm</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> Stackly Pet Supplies. All rights reserved.</p>
+      <nav aria-label="Legal">
+        <a href="404.html">Privacy</a><a href="404.html">Policy</a><a href="404.html">Terms</a><a href="404.html">Conditions</a>
+      </nav>
+     
+  </div>
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Page Not Found — Stackly</title>
+<meta name="description" content="The page you are looking for could not be found. Return home or continue browsing Stackly." />
+<meta name="robots" content="noindex" />
+<meta name="theme-color" content="#123a32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body class="error-page">
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<main id="main" data-error-page>
+  <section class="not-found" aria-labelledby="not-found-title">
+    <span class="not-found__glow not-found__glow--one" data-error-shape></span>
+    <span class="not-found__glow not-found__glow--two" data-error-shape></span>
+
+    <div class="container not-found__grid">
+      <div class="not-found__copy">
+        <a class="not-found__logo" href="index.html" aria-label="Stackly home" data-error-logo>
+          <img src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+
+        <div class="not-found__code" data-error-code aria-label="Error 404">
+          <span data-error-digit>4</span><span class="not-found__zero" data-error-zero>0</span><span data-error-digit>4</span>
+        </div>
+        <span class="eyebrow" data-error-kicker>Wrong turn, right place</span>
+        <h1 id="not-found-title" data-error-title>Looks like this page took a <span>scout.</span></h1>
+        <p class="lead" data-error-text>We could not find what you were looking for. Let us get you and your pet back on the right trail.</p>
+
+        <div class="not-found__actions" data-error-actions>
+          <a class="btn btn--lg" href="index.html" data-error-home>
+            <i class="fa-solid fa-house ico" aria-hidden="true" style="font-size:19px"></i>
+            Back to home
+          </a>
+          <button class="btn btn--lg btn--outline" type="button" data-go-back>
+            <i class="fa-solid fa-chevron-left ico" aria-hidden="true" style="font-size:19px"></i>
+            Go back
+          </button>
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

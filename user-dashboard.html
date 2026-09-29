@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Dashboard — Stackly</title>
+<meta name="description" content="Manage orders, saved products, pet profiles and appointments from your Stackly account." />
+<meta name="theme-color" content="#123a32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<main id="main" class="dashboard-page">
+  <div class="dashboard-frame">
+    <div class="dashboard-shell">
+      <div class="dashboard-mobilebar">
+        <a class="brand" href="user-dashboard.html" aria-label="Stackly dashboard">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <button class="icon-btn dashboard-mobilebar__toggle" type="button" aria-expanded="false" aria-controls="dashboard-menu" aria-label="Open menu">
+          <i class="fa-solid fa-bars ico dashboard-toggle__open" aria-hidden="true"></i>
+          <i class="fa-solid fa-xmark ico dashboard-toggle__close" aria-hidden="true"></i>
+        </button>
+      </div>
+      <aside id="dashboard-menu" class="dashboard-sidebar dashboard-sidebar--admin" aria-label="Account dashboard navigation">
+        <a class="brand" href="user-dashboard.html" aria-label="Stackly dashboard">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+          <span class="brand__text">
+            <span class="brand__tag">My Dashboard</span>
+          </span>
+        </a>
+
+        <nav class="dashboard-nav">
+          <a class="dashboard-nav__link" href="user-dashboard.html" aria-current="page">
+            <i class="fa-solid fa-table-cells-large ico" aria-hidden="true"></i>
+            Overview
+          </a>
+         
+          <a class="dashboard-nav__link" href="saved-items.html">
+            <i class="fa-regular fa-heart ico" aria-hidden="true"></i>
+            Saved Items
+          </a>
+          <a class="dashboard-nav__link" href="pet-profile.html">
+            <i class="fa-solid fa-paw ico" aria-hidden="true"></i>
+            Pet Profiles
+          </a>
+          <a class="dashboard-nav__link" href="account.html">
+            <i class="fa-solid fa-user ico" aria-hidden="true"></i>
+            Account
+          </a>
+        </nav>
+
+        <div class="dashboard-help">
+          <strong>Need a hand?</strong>
+          <p>Our care team is here every day.</p>
+          <a href="contact.html#form">Contact support <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="dashboard-sidebar__foot">
+          <a class="dashboard-logout" href="login.html" data-logout>
+            <i class="fa-solid fa-arrow-right-from-bracket ico" aria-hidden="true"></i>
+            Log out
+          </a>
+        </div>
+      </aside>
+
+      <div class="dashboard-main">
+        <section id="overview" aria-labelledby="dashboard-title">
+          <div class="dashboard-topbar">
+            <div>
+              <h1 id="dashboard-title">Welcome back, <span data-user-first>Jamie</span></h1>
+              <p>Here is what is happening with your pets and orders.</p>
+            </div>
+            <div class="dashboard-topbar__actions">
+              <button class="icon-btn" type="button" aria-label="Notifications, 3 unread">
+                <i class="fa-solid fa-bell ico" aria-hidden="true"></i>
+                <span class="icon-btn__badge">3</span>
+              </button>
+              <a class="icon-btn" href="orders.html" aria-label="Shopping cart">
+                <i class="fa-solid fa-cart-shopping ico" aria-hidden="true"></i>
+              </a>
+              <div class="dashboard-identity"><strong class="dashboard-identity__name" data-user-name>Jamie Davis</strong><span class="dashboard-identity__email" data-user-email>jamie@gmail.com</span></div>
+              <span class="dashboard-avatar" data-user-avatar aria-label="Jamie Davis">JD</span>
+            </div>
+          </div>
+
+          <div class="dashboard-welcome">
+            <div>
+              <h2>Everything is on track</h2>
+              <p>Milo’s food order arrives tomorrow, and Luna’s grooming visit is next Saturday.</p>
+              <div class="dashboard-welcome__meta">
+                <span class="dashboard-welcome__pill"><i class="fa-solid fa-truck-fast ico" aria-hidden="true"></i> 1 parcel in transit</span>
+                <span class="dashboard-welcome__pill"><i class="fa-solid fa-scissors ico" aria-hidden="true"></i> Grooming on Oct 03</span>
+                <span class="dashboard-welcome__pill"><i class="fa-solid fa-bone ico" aria-hidden="true"></i> Auto-ship in 12 days</span>
+              </div>
+            </div>
+            <div class="dashboard-welcome__actions">
+              <a class="btn btn--light" href="services.html">Shop for your pet</a>
+              <a class="btn btn--ghost-light" href="services.html#booking">Book a service</a>
+            </div>
+          </div>
+
+          <div class="dashboard-quick">
+            <a class="dashboard-quick__item" href="orders.html">
+              <span class="dashboard-quick__icon"><i class="fa-solid fa-receipt ico" aria-hidden="true"></i></span>
+              <span class="dashboard-quick__copy"><strong>Track orders</strong><span>Follow every parcel</span></span>
+            </a>
+            <a class="dashboard-quick__item" href="saved-items.html">
+              <span class="dashboard-quick__icon"><i class="fa-solid fa-heart ico" aria-hidden="true"></i></span>
+              <span class="dashboard-quick__copy"><strong>Saved items</strong><span>6 products ready</span></span>
+            </a>
+            <a class="dashboard-quick__item" href="services.html#booking">
+              <span class="dashboard-quick__icon"><i class="fa-solid fa-calendar-check ico" aria-hidden="true"></i></span>
+              <span class="dashboard-quick__copy"><strong>Book a visit</strong><span>Grooming, vet, spa</span></span>
+            </a>
+            <a class="dashboard-quick__item" href="account.html">
+              <span class="dashboard-quick__icon"><i class="fa-solid fa-user ico" aria-hidden="true"></i></span>
+              <span class="dashboard-quick__copy"><strong>Account</strong><span>Addresses and payment</span></span>
+            </a>
+          </div>
+
+          <div class="dashboard-stats">
+            <article class="dashboard-stat">
+              <span class="dashboard-stat__icon" aria-hidden="true"><i class="fa-solid fa-receipt ico" aria-hidden="true"></i></span>
+              <div>
+                <strong>12</strong>
+                <span>Total orders</span>
+                <span class="dashboard-stat__meta dashboard-stat--up"><i class="fa-solid fa-arrow-trend-up ico" aria-hidden="true"></i> 2 this month</span>
+              </div>
+            </article>
+            <article class="dashboard-stat dashboard-stat--accent">
+              <span class="dashboard-stat__icon" aria-hidden="true"><i class="fa-solid fa-heart ico" aria-hidden="true"></i></span>
+              <div>
+                <strong data-saved-count>6</strong>
+                <span>Saved products</span>
+                <span class="dashboard-stat__meta"><i class="fa-regular fa-heart ico" aria-hidden="true"></i> 2 added this week</span>
+              </div>
+            </article>
+            <article class="dashboard-stat dashboard-stat--gold">
+              <span class="dashboard-stat__icon" aria-hidden="true"><i class="fa-regular fa-clock ico" aria-hidden="true"></i></span>
+              <div>
+                <strong>2</strong>
+                <span>Upcoming visits</span>
+                <span class="dashboard-stat__meta dashboard-stat--down"><i class="fa-solid fa-scissors ico" aria-hidden="true"></i> Next on Oct 03</span>
+              </div>
+            </article>
+            <article class="dashboard-stat dashboard-stat--dark">
+              <span class="dashboard-stat__icon" aria-hidden="true"><i class="fa-solid fa-shield-halved ico" aria-hidden="true"></i></span>
+              <div>
+                <strong>850</strong>
+                <span>Reward points</span>
+                <span class="dashboard-stat__meta"><i class="fa-solid fa-gift ico" aria-hidden="true"></i> 150 to your next reward</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+<div class="dashboard-content-grid dashboard-content-grid--three">
+          <div class="dashboard-stack">
+            <section class="dashboard-card" id="orders" aria-labelledby="orders-title">
+              <div class="dashboard-card__head">
+                <div><h2 id="orders-title">Recent orders</h2><p>Track your latest purchases.</p></div>
+                <a class="dashboard-card__link" href="orders.html">View all <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+              </div>
+              <div class="dashboard-table-wrap">
+                <table class="dashboard-table" aria-label="Recent orders">
+                  <thead><tr><th>Order</th><th>Date</th><th>Items</th><th>Total</th><th>Status</th></tr></thead>
+                  <tbody>
+                    <tr><td><strong>#PW-10428</strong></td><td>Sep 24, 2026</td><td>4 items</td><td>$78.40</td><td><span class="dashboard-status dashboard-status--blue">Shipped</span></td></tr>
+                    <tr><td><strong>#PW-10376</strong></td><td>Sep 12, 2026</td><td>2 items</td><td>$42.00</td><td><span class="dashboard-status dashboard-status--green">Delivered</span></td></tr>
+                    <tr><td><strong>#PW-10291</strong></td><td>Aug 29, 2026</td><td>6 items</td><td>$116.25</td><td><span class="dashboard-status dashboard-status--green">Delivered</span></td></tr>
+                    <tr><td><strong>#PW-10204</strong></td><td>Aug 08, 2026</td><td>3 items</td><td>$64.90</td><td><span class="dashboard-status dashboard-status--green">Delivered</span></td></tr>
+                    <tr><td><strong>#PW-10177</strong></td><td>Jul 21, 2026</td><td>5 items</td><td>$98.15</td><td><span class="dashboard-status dashboard-status--green">Delivered</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="dashboard-track">
+                <div class="dashboard-track__head">
+                  <strong>Order #PW-10428 · arriving tomorrow</strong>
+                  <span><i class="fa-solid fa-location-crosshairs ico" aria-hidden="true"></i> Courier is 2 stops away</span>
+                </div>
+                <div class="dashboard-order-progress">
+                  <div class="dashboard-order-progress__bar"><span></span></div>
+                  <div class="dashboard-order-progress__labels">
+                    <span class="is-done">Confirmed</span>
+                    <span class="is-done">Packed</span>
+                    <span class="is-done">Shipped</span>
+                    <span>Delivered</span>
+                  </div>
+                </div>
+                <div class="dashboard-card__foot">
+                  <p>Wild Meadow Dry Food, Rope Chew Bundle and 2 more items.</p>
+                  <div class="dashboard-card__actions">
+                    <a class="btn btn--outline btn--sm" href="orders.html">Track parcel</a>
+                    <a class="btn btn--sm" href="index.html#products">Buy it again</a>
+                  </div>
+                </div>
+              </div>
+
+              <dl class="dashboard-orders-summary">
+                <div><dt>Spent this year</dt><dd>$1,284.60</dd></div>
+                <div><dt>Average order</dt><dd>$107.05</dd></div>
+                <div><dt>Largest order</dt><dd>$214.80</dd></div>
+                <div><dt>Member since</dt><dd>Mar 2024</dd></div>
+              </dl>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="spend-title">
+              <div class="dashboard-card__head">
+                <div>
+                  <h2 id="spend-title">Spending overview</h2>
+                  <p>Your last six months with Stackly.</p>
+                  <p class="dashboard-chart__meta"><strong>$612.45</strong> total · 8% less than the previous period</p>
+                </div>
+                <a class="dashboard-card__link" href="orders.html">Invoices <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+              </div>
+              <div class="dashboard-chart" role="img" aria-label="Bar chart of monthly spending from April to September 2026">
+                <div class="dashboard-chart__item"><div class="dashboard-chart__bar" style="--bar-height:42%"></div><span>Apr</span></div>
+                <div class="dashboard-chart__item"><div class="dashboard-chart__bar" style="--bar-height:58%"></div><span>May</span></div>
+                <div class="dashboard-chart__item"><div class="dashboard-chart__bar" style="--bar-height:35%"></div><span>Jun</span></div>
+                <div class="dashboard-chart__item"><div class="dashboard-chart__bar" style="--bar-height:74%"></div><span>Jul</span></div>
+                <div class="dashboard-chart__item"><div class="dashboard-chart__bar" style="--bar-height:88%"></div><span>Aug</span></div>
+                <div class="dashboard-chart__item"><div class="dashboard-chart__bar" style="--bar-height:66%"></div><span>Sep</span></div>
+              </div>
+              <div class="dashboard-chart-foot">
+                <ul class="dashboard-legend">
+                  <li><span><i></i>Food &amp; treats</span><strong>$268</strong></li>
+                  <li><span><i style="background:var(--accent-500)"></i>Toys &amp; play</span><strong>$164</strong></li>
+                  <li><span><i style="background:var(--gold-500)"></i>Health &amp; care</span><strong>$180</strong></li>
+                </ul>
+                <a class="dashboard-inline-link" href="orders.html">Download statement <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+              </div>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="picks-title">
+              <div class="dashboard-card__head">
+                <div><h2 id="picks-title">Picked for Milo and Luna</h2><p>Based on their profiles and recent orders.</p></div>
+                <a class="dashboard-card__link" href="index.html#products">Shop all <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+              </div>
+
+              <div class="dashboard-product-grid dashboard-product-grid--auto">
+                <article class="dashboard-product">
+                  <div class="dashboard-product__media">
+                    <span class="dashboard-product__badge">Best seller</span>
+                    <img src="assets/home enrichment.webp" alt="Rope chew toy bundle for dogs" width="200" height="150" loading="lazy" />
+                  </div>
+                  <div class="dashboard-product__body">
+                    <span class="dashboard-product__category">Toys</span>
+                    <h4>Rope Chew Bundle</h4>
+                    <p class="dashboard-product__note">Matches Milo’s chews</p>
+                    <div class="dashboard-product__price"><span>$18.50</span><button class="add-btn" type="button" aria-label="Add Rope Chew Bundle to cart"><i class="fa-solid fa-plus ico" aria-hidden="true"></i></button></div>
+                  </div>
+                </article>
+
+                <article class="dashboard-product">
+                  <div class="dashboard-product__media">
+                    <span class="dashboard-product__badge">New</span>
+                    <img src="assets/home cats.webp" alt="Indoor climbing scratcher post for cats" width="200" height="150" loading="lazy" />
+                  </div>
+                  <div class="dashboard-product__body">
+                    <span class="dashboard-product__category">Furniture</span>
+                    <h4>Window Perch for Luna</h4>
+                    <p class="dashboard-product__note">Great for indoor cats</p>
+                    <div class="dashboard-product__price"><span>$44.00</span><button class="add-btn" type="button" aria-label="Add Window Perch for Luna to cart"><i class="fa-solid fa-plus ico" aria-hidden="true"></i></button></div>
+                  </div>
+                </article>
+
+                <article class="dashboard-product">
+                  <div class="dashboard-product__media">
+                    <img src="assets/services spa.webp" alt="Calming dog shampoo and paw balm set" width="200" height="150" loading="lazy" />
+                  </div>
+                  <div class="dashboard-product__body">
+                    <span class="dashboard-product__category">Grooming</span>
+                    <h4>Calm Coat Spa Set</h4>
+                    <div class="dashboard-product__rating"><i class="fa-solid fa-star ico" aria-hidden="true"></i><i class="fa-solid fa-star ico" aria-hidden="true"></i><i class="fa-solid fa-star ico" aria-hidden="true"></i><i class="fa-solid fa-star ico" aria-hidden="true"></i><i class="fa-solid fa-star ico" aria-hidden="true"></i><span>(124)</span></div>
+                    <div class="dashboard-product__price"><span>$26.75</span><button class="add-btn" type="button" aria-label="Add Calm Coat Spa Set to cart"><i class="fa-solid fa-plus ico" aria-hidden="true"></i></button></div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="dashboard-card__foot">
+                <p>Free delivery over $59 · 30-day returns on unopened food.</p>
+                <a class="dashboard-inline-link" href="saved-items.html">See your 6 saved items <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+              </div>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="tips-title">
+              <div class="dashboard-card__head">
+                <div><h2 id="tips-title">Care tips for you</h2><p>Fresh from the Stackly journal.</p></div>
+                <a class="dashboard-card__link" href="blog.html">All articles <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+              </div>
+
+              <div class="dashboard-tips">
+                <article class="dashboard-tip">
+                  <span class="dashboard-tip__media"><img src="assets/blog nutrition1.webp" alt="Fresh vegetables and grains on a board" width="156" height="124" loading="lazy" /></span>
+                  <div class="dashboard-tip__body">
+                    <h4><a href="blog.html">Wet, dry or fresh: what the research actually says</a></h4>
+                    <p class="dashboard-tip__meta"><span><i class="fa-regular fa-clock ico" aria-hidden="true"></i> 7 min read</span><span><i class="fa-regular fa-calendar ico" aria-hidden="true"></i> 11 Mar 2026</span></p>
+                  </div>
+                </article>
+
+                <article class="dashboard-tip">
+                  <span class="dashboard-tip__media"><img src="assets/blog training.webp" alt="Dog training with a calm reward" width="156" height="124" loading="lazy" /></span>
+                  <div class="dashboard-tip__body">
+                    <h4><a href="blog.html">Five calm exercises for a dog who pulls on the lead</a></h4>
+                    <p class="dashboard-tip__meta"><span><i class="fa-regular fa-clock ico" aria-hidden="true"></i> 5 min read</span><span><i class="fa-regular fa-calendar ico" aria-hidden="true"></i> 02 Feb 2026</span></p>
+                  </div>
+                </article>
+
+                <article class="dashboard-tip">
+                  <span class="dashboard-tip__media"><img src="assets/contact grooming studio.webp" alt="Pet being brushed on a grooming table" width="156" height="124" loading="lazy" /></span>
+                  <div class="dashboard-tip__body">
+                    <h4><a href="blog.html">How to keep long-haired coats healthy between grooms</a></h4>
+                    <p class="dashboard-tip__meta"><span><i class="fa-regular fa-clock ico" aria-hidden="true"></i> 4 min read</span><span><i class="fa-regular fa-calendar ico" aria-hidden="true"></i> 19 Jan 2026</span></p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+          </div>
+
+          <div class="dashboard-stack">
+            <section class="dashboard-card" id="pets" aria-labelledby="pets-title">
+              <div class="dashboard-card__head"><div><h2 id="pets-title">Pet profiles</h2><p>2 happy companions</p></div><a class="dashboard-card__link" href="pet-profile.html">Manage <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a></div>
+
+              <div class="dashboard-pet-list">
+                <article class="dashboard-pet-row">
+                  <span class="dashboard-pet-row__photo"><img src="assets/home enrichment.webp" alt="Milo the Golden Retriever out on a walk" width="54" height="54" loading="lazy" /></span>
+                  <div class="dashboard-pet-row__body">
+                    <h3>Milo</h3>
+                    <p>Golden Retriever · 4 years</p>
+                    <div class="dashboard-tags"><span class="dashboard-tag">Food: Grain-free</span><span class="dashboard-tag">Weight: 29 kg</span></div>
+                  </div>
+                  <div class="dashboard-pet-row__side">
+                    <span>Next visit</span>
+                    <strong>Oct 17</strong>
+                  </div>
+                </article>
+
+                <article class="dashboard-pet-row">
+                  <span class="dashboard-pet-row__photo"><img src="assets/home cats.webp" alt="Luna the Domestic Shorthair resting indoors" width="54" height="54" loading="lazy" /></span>
+                  <div class="dashboard-pet-row__body">
+                    <h3>Luna</h3>
+                    <p>Domestic Shorthair · 2 years</p>
+                    <div class="dashboard-tags"><span class="dashboard-tag">Food: Indoor recipe</span><span class="dashboard-tag">Allergy: Chicken</span></div>
+                  </div>
+                  <div class="dashboard-pet-row__side">
+                    <span>Next visit</span>
+                    <strong>Oct 03</strong>
+                  </div>
+                </article>
+              </div>
+
+              <div class="dashboard-card__foot">
+                <p>Keep weights and food plans up to date.</p>
+                <div class="dashboard-card__actions">
+                  <a class="btn btn--outline btn--sm" href="pet-profile.html">Add a pet</a>
+                </div>
+              </div>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="visit-title">
+              <div class="dashboard-card__head">
+                <div><h2 id="visit-title">Upcoming appointments</h2><p>Grooming Studio and Wellness Clinic</p></div>
+                <span class="dashboard-status dashboard-status--green">2 booked</span>
+              </div>
+
+              <div class="dashboard-visit-list">
+                <article class="dashboard-visit">
+                  <div class="dashboard-date-box"><span>Oct</span><strong>03</strong></div>
+                  <div class="dashboard-visit__body">
+                    <h4>Luna’s Full Groom</h4>
+                    <p>10:30 AM · 60 minutes · Grooming Studio</p>
+                    <span class="dashboard-visit__tag"><i class="fa-solid fa-scissors ico" aria-hidden="true"></i> Grooming</span>
+                  </div>
+                  <a class="dashboard-inline-link" href="services.html#booking">Details</a>
+                </article>
+
+                <article class="dashboard-visit">
+                  <div class="dashboard-date-box"><span>Oct</span><strong>17</strong></div>
+                  <div class="dashboard-visit__body">
+                    <h4>Milo’s Wellness Check</h4>
+                    <p>2:15 PM · 30 minutes · Wellness Clinic</p>
+                    <span class="dashboard-visit__tag"><i class="fa-solid fa-stethoscope ico" aria-hidden="true"></i> Health check</span>
+                  </div>
+                  <a class="dashboard-inline-link" href="services.html#booking">Details</a>
+                </article>
+              </div>
+
+              <div class="dashboard-card__foot">
+                <p>Free to reschedule up to 24 hours before.</p>
+                <div class="dashboard-card__actions">
+                  <a class="btn btn--outline btn--sm" href="services.html#booking">Book another visit</a>
+                </div>
+              </div>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="reward-title">
+              <div class="dashboard-card__head">
+                <div><h2 id="reward-title">Reward points</h2><p>Treats for both of you.</p></div>
+                <a class="dashboard-card__link" href="account.html">How it works <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+              </div>
+
+              <div class="dashboard-reward">
+                <div class="dashboard-reward__top">
+                  <div>
+                    <strong>850</strong>
+                    <span>Points available · worth $8.50</span>
+                  </div>
+                  <span class="dashboard-reward__icon"><i class="fa-solid fa-paw ico" aria-hidden="true"></i></span>
+                </div>
+                <div class="dashboard-reward__bar"><span></span></div>
+                <p class="dashboard-reward__scale"><span><strong>150 points</strong> to Gold Paws</span><span>1,000</span></p>
+                <ul class="dashboard-reward__perks">
+                  <li><i class="fa-solid fa-circle-check ico" aria-hidden="true"></i> 2 free nail trims waiting</li>
+                  <li><i class="fa-solid fa-circle-check ico" aria-hidden="true"></i> Birthday treat on Milo’s day</li>
+                  <li><i class="fa-solid fa-lock ico" aria-hidden="true"></i> Gold Paws unlocks free delivery</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="activity-title">
+              <div class="dashboard-card__head">
+                <div><h2 id="activity-title">Recent activity</h2><p>Everything we did for you lately.</p></div>
+                <button class="icon-btn" type="button" aria-label="Mark all activity as read"><i class="fa-solid fa-check-double ico" aria-hidden="true"></i></button>
+              </div>
+
+              <div class="dashboard-feed">
+                <article class="dashboard-feed__item">
+                  <span class="dashboard-feed__icon"><i class="fa-solid fa-truck ico" aria-hidden="true"></i></span>
+                  <div class="dashboard-feed__body">
+                    <p><strong>#PW-10428</strong> left our warehouse in Rotterdam.</p>
+                    <time datetime="2026-09-25">Yesterday · 18:40</time>
+                  </div>
+                </article>
+
+                <article class="dashboard-feed__item dashboard-feed__item--accent">
+                  <span class="dashboard-feed__icon"><i class="fa-solid fa-scissors ico" aria-hidden="true"></i></span>
+                  <div class="dashboard-feed__body">
+                    <p>Luna’s grooming slot was confirmed for <strong>Oct 03 at 10:30</strong>.</p>
+                    <time datetime="2026-09-24">Sep 24 · 09:12</time>
+                  </div>
+                </article>
+
+                <article class="dashboard-feed__item dashboard-feed__item--gold">
+                  <span class="dashboard-feed__icon"><i class="fa-solid fa-gift ico" aria-hidden="true"></i></span>
+                  <div class="dashboard-feed__body">
+                    <p>You earned <strong>50 points</strong> from order #PW-10376.</p>
+                    <time datetime="2026-09-14">Sep 14 · 12:03</time>
+                  </div>
+                </article>
+
+                <article class="dashboard-feed__item">
+                  <span class="dashboard-feed__icon"><i class="fa-solid fa-box-open ico" aria-hidden="true"></i></span>
+                  <div class="dashboard-feed__body">
+                    <p><strong>#PW-10376</strong> was delivered to your door.</p>
+                    <time datetime="2026-09-13">Sep 13 · 16:55</time>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+
+          <div class="dashboard-stack">
+
+            <section class="dashboard-card" aria-labelledby="delivery-title">
+              <div class="dashboard-card__head">
+                <div><h2 id="delivery-title">Delivery &amp; payment</h2><p>Where we send the next parcel.</p></div>
+                <a class="dashboard-card__link" href="account.html">Edit <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+              </div>
+
+              <div class="dashboard-methods">
+                <div class="dashboard-method">
+                  <span class="dashboard-method__icon"><i class="fa-solid fa-house ico" aria-hidden="true"></i></span>
+                  <div class="dashboard-method__body">
+                    <strong>Home delivery</strong>
+                    <span>14 Pawsworth Lane, Rotterdam · Default</span>
+                  </div>
+                  <span class="dashboard-method__action dashboard-status dashboard-status--green">Active</span>
+                </div>
+
+                <div class="dashboard-method">
+                  <span class="dashboard-method__icon"><i class="fa-solid fa-credit-card ico" aria-hidden="true"></i></span>
+                  <div class="dashboard-method__body">
+                    <strong>Visa ending 4417</strong>
+                    <span>Expires 08/28 · Used for 11 orders</span>
+                  </div>
+                  <span class="dashboard-method__action dashboard-status dashboard-status--blue">Default</span>
+                </div>
+
+                <div class="dashboard-method">
+                  <span class="dashboard-method__icon"><i class="fa-solid fa-truck-fast ico" aria-hidden="true"></i></span>
+                  <div class="dashboard-method__body">
+                    <strong>Next-day delivery</strong>
+                    <span>Order before 6 PM for tomorrow</span>
+                  </div>
+                  <span class="dashboard-method__action dashboard-status dashboard-status--orange">$4.90</span>
+                </div>
+              </div>
+
+              <div class="dashboard-card__foot">
+                <p>Auto-ship for Milo’s food is paused until Oct 06.</p>
+                <a class="dashboard-inline-link" href="account.html">Manage subscriptions <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+              </div>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="prefs-title">
+              <div class="dashboard-card__head">
+                <div><h2 id="prefs-title">Your preferences</h2><p>Set the way we contact you.</p></div>
+                <a class="dashboard-card__link" href="account.html">Change <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+              </div>
+
+              <div class="dashboard-preference-list">
+                <div class="dashboard-preference">
+                  <span class="dashboard-preference__icon"><i class="fa-solid fa-envelope ico" aria-hidden="true"></i></span>
+                  <div><strong>Order updates by email</strong><span>Shipping and delivery notices are on.</span></div>
+                </div>
+                <div class="dashboard-preference">
+                  <span class="dashboard-preference__icon"><i class="fa-solid fa-bell ico" aria-hidden="true"></i></span>
+                  <div><strong>Appointment reminders</strong><span>Text alerts 24 hours before each visit.</span></div>
+                </div>
+                <div class="dashboard-preference">
+                  <span class="dashboard-preference__icon"><i class="fa-solid fa-leaf ico" aria-hidden="true"></i></span>
+                  <div><strong>Paperless by default</strong><span>Invoices and receipts are stored online.</span></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="dashboard-card" aria-labelledby="support-title">
+              <div class="dashboard-card__head">
+                <div><h2 id="support-title">We are here to help</h2><p>Chat, call or visit the store.</p></div>
+              </div>
+
+              <div class="dashboard-support">
+                <div class="dashboard-support__row">
+                  <i class="fa-solid fa-comments ico" aria-hidden="true"></i>
+                  <div><strong>Live chat</strong><span>Every day, 08:00 – 21:00</span></div>
+                  <a class="dashboard-inline-link" href="contact.html#form">Start chat</a>
+                </div>
+                <div class="dashboard-support__row">
+                  <i class="fa-solid fa-phone ico" aria-hidden="true"></i>
+                  <div><strong>Care line</strong><span>+31 10 555 0142 · Free advice</span></div>
+                  <a class="dashboard-inline-link" href="contact.html#form">Call us</a>
+                </div>
+                <div class="dashboard-support__row">
+                  <i class="fa-solid fa-store ico" aria-hidden="true"></i>
+                  <div><strong>Visit the store</strong><span>12 Haven Street, Rotterdam</span></div>
+                  <a class="dashboard-inline-link" href="contact.html">Details</a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="dashboard-footnote">
+          <p>Stackly Pet Supplies · Member since March 2024 · Gold Paws tier at 1,000 points</p>
+          <nav aria-label="Help and policy links">
+            <a href="contact.html#form">Contact support</a>
+            <a href="about.html">About us</a>
+            <a href="services.html">All services</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Us — Stackly Pet Supplies</title>
+<meta name="description" content="Discover how Stackly grew from a single neighbourhood stall into a vet-reviewed pet supplies store serving 40,000 pet parents. Meet our team, values and journey." />
+<meta name="theme-color" content="#123a32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Stackly home">
+      <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Main navigation">
+      <div class="nav__drawer-head">
+        <a class="brand" href="index.html" aria-label="Stackly home">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <button class="nav__drawer-close" type="button" aria-label="Close menu">
+          <i class="fa-solid fa-xmark ico" aria-hidden="true" style="font-size:20px"></i>
+        </button>
+      </div>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="services.html">Services</a></li>
+        <li><a class="nav__link" href="blog.html">Blog</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav__auth">
+        <a class="btn btn--outline" href="login.html">Log in</a>
+        <a class="btn btn--accent" href="signup.html">Sign up</a>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-auth header-auth--login" href="login.html">Log in</a>
+      <a class="header-auth header-auth--signup" href="signup.html">Sign up</a>
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <i class="fa-solid fa-bars ico" aria-hidden="true" style="font-size:22px"></i>
+      </button>
+    </div>
+  </div>
+  <div class="search-panel" id="searchPanel">
+    <div class="container">
+      <form class="search-panel__form" action="blog.html" method="get" role="search">
+        <i class="fa-solid fa-magnifying-glass ico" aria-hidden="true" style="font-size:20px"></i>
+        <input type="search" name="q" placeholder="Search food, toys, grooming, breed guides…" aria-label="Search products and articles" />
+        <button class="btn btn--sm" type="submit">Search</button>
+        <button class="icon-btn" type="button" id="searchClose" aria-label="Close search">
+          <i class="fa-solid fa-xmark ico" aria-hidden="true" style="font-size:18px"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ SECTION 1 : PAGE HERO ============ -->
+  <section class="page-hero" id="about">
+    <div class="container page-hero__inner">
+      <div>
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <span aria-current="page">About</span>
+        </nav>
+        <span class="eyebrow" data-hero="eyebrow">Since 2014</span>
+        <h1 data-hero="title">We&rsquo;re in This Because of the Pets</h1>
+        <p data-hero="text">Paw &amp; Whisker began in a single market stall with one rule: never sell a pet something we wouldn&rsquo;t give our own family. Twelve years later, 40,000 pet parents trust us with the everyday joy and worry of caring for their companions.</p>
+        <div class="hero__cta" data-hero="cta">
+          <a class="btn" href="404.html">Read Our Story</a>
+          <a class="btn btn--outline" href="404.html">Visit the Store</a>
+        </div>
+      </div>
+      <div class="page-hero__art" data-hero="visual">
+        <img src="./assets/about hero.webp" alt="Pet shop owner smiling with a dog in the store" width="800" height="640" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 2 : OUR STORY ============ -->
+  <section class="section" id="story">
+    <div class="container">
+      <div class="split">
+        <div class="split__media" data-reveal="left">
+          <img src="assets/about store assistant.webp" alt="Shop assistant helping a customer choose pet food" loading="lazy" />
+          <div class="split__badge" data-float="4.5"><strong>2014</strong><span>Founded in Portland</span></div>
+        </div>
+        <div data-reveal="right">
+          <span class="eyebrow">Our story</span>
+          <h2>One Stall, One Rescue Dog, One Promise</h2>
+          <p class="lead">In the winter of 2014, our founder Hannah Okoye took in a rescue greyhound named Biscuit who had been fed nothing but the cheapest kibble her whole life. Within a month her coat changed, her energy returned, and her vet asked what we were feeding her. That question became a business.</p>
+          <p>Hannah started selling a short, obsessive list of products — food she could trace to a named source, toys that survived Biscuit, bedding she could wash a hundred times — from a market stall at the Saturday fair. People came back because we said &ldquo;I don&rsquo;t know&rdquo; when we didn&rsquo;t know, and we called the local vet before recommending anything.</p>
+          <p>Today our studio covers 14,000 square feet, but the rule hasn&rsquo;t moved. Every product is trialled by our own animals and reviewed by a veterinarian before it reaches a shelf. If we can&rsquo;t stand behind it, we don&rsquo;t stock it — full stop.</p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i><span><strong>Every product trialled by our own pets</strong> — for a minimum of eight weeks at home.</span></li>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i><span><strong>1% of revenue funds rescue partnerships</strong> with three local shelters.</span></li>
+            <li><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i><span><strong>Zero sponsored reviews.</strong> Paid partnerships are labelled clearly.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3 : MISSION, VISION, VALUES ============ -->
+  <section class="section section--cream" id="values">
+    <div class="container">
+      <div class="sec-head sec-head--center max-760 sec-head" data-reveal>
+        <span class="eyebrow">What drives us</span>
+        <h2>Mission, Vision &amp; the Rules We Keep</h2>
+        <p class="lead">Three short statements that decide every argument we have about a product, a price or a policy.</p>
+      </div>
+      <div class="grid g-3" data-stagger="0.1">
+        <article class="card value-card">
+          <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-sun ico" aria-hidden="true"></i></span>
+          <h3>Our Mission</h3>
+          <p>To make excellent pet care affordable, understandable and joyful — for every animal and every household that opens their door to one.</p>
+        </article>
+        <article class="card value-card">
+          <span class="card-icon card-icon--accent" aria-hidden="true"><i class="fa-regular fa-eye ico" aria-hidden="true"></i></span>
+          <h3>Our Vision</h3>
+          <p>A world where nobody has to guess what is in the bowl, the crate or the cupboard — and where adopting is always the first option people consider.</p>
+        </article>
+        <article class="card value-card">
+          <span class="card-icon card-icon--gold" aria-hidden="true"><i class="fa-solid fa-star ico" aria-hidden="true"></i></span>
+          <h3>Our Promise</h3>
+          <p>Honest labels, honest pricing and honest advice. If a cheaper option genuinely suits your pet, we will tell you — and you&rsquo;ll still get our service.</p>
+        </article>
+      </div>
+
+      <div class="grid g-4 mt-l" data-stagger="0.08">
+        <div class="card text-center">
+          <span class="card-icon card-icon--accent" style="margin-inline:auto" aria-hidden="true"><i class="fa-solid fa-shield-halved ico" aria-hidden="true"></i></span>
+          <h4>Safety First</h4>
+          <p class="muted small">Choking hazards, recalled batches and toxic ingredients are tracked in real time.</p>
+        </div>
+        <div class="card text-center">
+          <span class="card-icon" style="margin-inline:auto" aria-hidden="true"><i class="fa-solid fa-check ico" aria-hidden="true"></i></span>
+          <h4>No Greenwashing</h4>
+          <p class="muted small">We publish the full ingredient and sourcing data behind every claim.</p>
+        </div>
+        <div class="card text-center">
+          <span class="card-icon card-icon--gold" style="margin-inline:auto" aria-hidden="true"><i class="fa-solid fa-shield ico" aria-hidden="true"></i></span>
+          <h4>Planet Kind</h4>
+          <p class="muted small">Recyclable packaging, carbon-neutral shipping and refill programmes.</p>
+        </div>
+        <div class="card text-center">
+          <span class="card-icon card-icon--accent" style="margin-inline:auto" aria-hidden="true"><i class="fa-solid fa-user ico" aria-hidden="true"></i></span>
+          <h4>Rescue Always</h4>
+          <p class="muted small">Adoption fairs every quarter, plus free starter kits for new adopters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 4 : JOURNEY TIMELINE ============ -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="sec-head sec-head--center max-760 sec-head" data-reveal>
+        <span class="eyebrow">Our journey</span>
+        <h2>Twelve Years, One Direction</h2>
+        <p class="lead">From a Saturday market stall to a national store — with a few excellent mistakes along the way.</p>
+      </div>
+      <div class="grid g-2 items-start">
+        <div class="timeline" data-reveal="left">
+          <div class="tl-item">
+            <span class="tl-item__year">2014</span>
+            <h4>The first Saturday stall</h4>
+            <p>Forty products, one rescue greyhound, and a notebook of customer questions we promised to answer by Monday.</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-item__year">2016</span>
+            <h4>Our first shop &amp; vet partnership</h4>
+            <p>We opened a 900 sq ft store on Willow Lane and signed a formal advisory agreement with two local veterinary practices.</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-item__year">2018</span>
+            <h4>Online store launches</h4>
+            <p>Same-day delivery within 15 miles. Our packing team hand-writes a care note in every first order.</p>
+          </div>
+        </div>
+        <div class="timeline" data-reveal="right">
+          <div class="tl-item">
+            <span class="tl-item__year">2021</span>
+            <h4>The adoption fund</h4>
+            <p>1% of every order funds our shelter partners. In three years that paid for 640 rescue medical treatments.</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-item__year">2023</span>
+            <h4>Grooming studio &amp; refill programme</h4>
+            <p>A calm, appointment-only grooming studio opened alongside a bulk refill station to cut plastic waste by 38%.</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-item__year">2026</span>
+            <h4>40,000 pet parents</h4>
+            <p>Still independently owned, still answering the phone ourselves, still saying &ldquo;I don&rsquo;t know&rdquo; when it&rsquo;s true.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 5 : TEAM ============ -->
+  <section class="section section--cream" id="team">
+    <div class="container">
+      <div class="sec-head sec-head--center max-760 sec-head" data-reveal>
+        <span class="eyebrow">The people behind the paw</span>
+        <h2>Meet the Care Team</h2>
+        <p class="lead">Veterinary advisors, certified groomers, nutritionists and rescue advocates — all on one floor, all sharing their direct lines.</p>
+      </div>
+      <div class="grid g-4" data-stagger="0.08">
+        <article class="card team-card">
+          <div class="team-card__img">
+            <img src="assets/about hannah okoye.webp" alt="Portrait of Hannah Okoye, founder" loading="lazy" />
+            <div class="team-card__social">
+              <a href="404.html" aria-label="Hannah on LinkedIn"><i class="fa-brands fa-linkedin ico" aria-hidden="true" style="font-size:15px"></i></a>
+              <a href="404.html" aria-label="Email Hannah"><i class="fa-solid fa-envelope ico" aria-hidden="true" style="font-size:15px"></i></a>
+            </div>
+          </div>
+          <div class="team-card__body">
+            <h4>Hannah Okoye</h4>
+            <p>Founder &amp; Head Buyer</p>
+          </div>
+        </article>
+
+        <article class="card team-card">
+          <div class="team-card__img">
+            <img src="assets/dr elena vasquez.webp" alt="Portrait of Dr. Elena Vasquez, veterinary advisor" loading="lazy" />
+            <div class="team-card__social">
+              <a href="404.html" aria-label="Elena on LinkedIn"><i class="fa-brands fa-linkedin ico" aria-hidden="true" style="font-size:15px"></i></a>
+              <a href="404.html" aria-label="Email Elena"><i class="fa-solid fa-envelope ico" aria-hidden="true" style="font-size:15px"></i></a>
+            </div>
+          </div>
+          <div class="team-card__body">
+            <h4>Dr. Elena Vasquez</h4>
+            <p>Veterinary Advisor, DVM</p>
+          </div>
+        </article>
+
+        <article class="card team-card">
+          <div class="team-card__img">
+            <img src="assets/marcus reid.webp" alt="Portrait of Marcus Reid, certified groomer" loading="lazy" />
+            <div class="team-card__social">
+              <a href="404.html" aria-label="Marcus on LinkedIn"><i class="fa-brands fa-linkedin ico" aria-hidden="true" style="font-size:15px"></i></a>
+              <a href="404.html" aria-label="Email Marcus"><i class="fa-solid fa-envelope ico" aria-hidden="true" style="font-size:15px"></i></a>
+            </div>
+          </div>
+          <div class="team-card__body">
+            <h4>Marcus Reid</h4>
+            <p>Lead Groomer, CQG</p>
+          </div>
+        </article>
+
+        <article class="card team-card">
+          <div class="team-card__img">
+            <img src="assets/priya raman.webp" alt="Portrait of Priya Raman, pet nutritionist" loading="lazy" />
+            <div class="team-card__social">
+              <a href="404.html" aria-label="Priya on LinkedIn"><i class="fa-brands fa-linkedin ico" aria-hidden="true" style="font-size:15px"></i></a>
+              <a href="404.html" aria-label="Email Priya"><i class="fa-solid fa-envelope ico" aria-hidden="true" style="font-size:15px"></i></a>
+            </div>
+          </div>
+          <div class="team-card__body">
+            <h4>Priya Raman</h4>
+            <p>Pet Nutritionist, MSc</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 6 : BY THE NUMBERS ============ -->
+  <section class="section section--brand" id="numbers">
+    <div class="container">
+      <div class="sec-head sec-head--center max-760 sec-head" data-reveal>
+        <span class="eyebrow">By the numbers</span>
+        <h2>Twelve Years, Measured Honestly</h2>
+      </div>
+      <div class="grid g-4" data-stagger="0.08">
+        <div class="stat-box">
+          <span class="stat-num" data-count="40" data-suffix="K+">0</span>
+          <p>Pet parents served</p>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" data-count="640" data-suffix="">0</span>
+          <p>Rescue treatments funded</p>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" data-count="38" data-suffix="%">0</span>
+          <p>Less plastic shipped</p>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" data-count="14" data-suffix="">0</span>
+          <p>Team members &amp; volunteers</p>
+        </div>
+      </div>
+      <div class="grid g-3 mt-l" data-reveal>
+        <div class="card" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14)">
+          <h4 style="color:#fff">Adoption fund</h4>
+          <div class="stars" style="color:var(--gold-500);margin-bottom:.5rem">★★★★★</div>
+          <div style="background:rgba(255,255,255,.14);border-radius:99px;height:10px;overflow:hidden">
+            <div style="width:0;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--brand-300),var(--accent-400))" data-bar="82"></div>
+          </div>
+          <p class="small" style="color:var(--brand-200);margin-top:.7rem">82% of our 2026 rescue target funded</p>
+        </div>
+        <div class="card" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14)">
+          <h4 style="color:#fff">Recyclable packaging</h4>
+          <div class="stars" style="color:var(--gold-500);margin-bottom:.5rem">★★★★★</div>
+          <div style="background:rgba(255,255,255,.14);border-radius:99px;height:10px;overflow:hidden">
+            <div style="width:0;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--brand-300),var(--accent-400))" data-bar="94"></div>
+          </div>
+          <p class="small" style="color:var(--brand-200);margin-top:.7rem">94% of outbound packaging is plastic-free</p>
+        </div>
+        <div class="card" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14)">
+          <h4 style="color:#fff">Customer satisfaction</h4>
+          <div class="stars" style="color:var(--gold-500);margin-bottom:.5rem">★★★★★</div>
+          <div style="background:rgba(255,255,255,.14);border-radius:99px;height:10px;overflow:hidden">
+            <div style="width:0;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--brand-300),var(--accent-400))" data-bar="97"></div>
+          </div>
+          <p class="small" style="color:var(--brand-200);margin-top:.7rem">97% would recommend us to a friend</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 7 : GALLERY ============ -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="sec-head sec-head--center max-760 sec-head" data-reveal>
+        <span class="eyebrow">Inside our world</span>
+        <h2>A Look Around the Studio</h2>
+        <p class="lead">The stockroom, the grooming table, the refill station and the animals who supervise all of it.</p>
+      </div>
+      <div class="mosaic" data-stagger="0.06">
+        <figure class="mosaic__item" data-caption="The Willow Lane shop floor">
+          <img src="assets/store aisles.webp" alt="Browsing the aisles of a pet store" loading="lazy" />
+        </figure>
+        <figure class="mosaic__item" data-caption="Grooming studio">
+          <img src="./assets/about1.webp" alt="Dog being groomed on a table" loading="lazy" />
+        </figure>
+        <figure class="mosaic__item" data-caption="Fresh food counter">
+          <img src="./assets/about2.webp" alt="Fresh pet food served in a bowl" loading="lazy" />
+        </figure>
+        <figure class="mosaic__item" data-caption="Meet-and-greet Saturday">
+          <img src="assets/dogs greeting.webp" alt="Two dogs greeting each other outdoors" loading="lazy" />
+        </figure>
+        <figure class="mosaic__item" data-caption="Refill station">
+          <img src="./assets/about3.webp" alt="Cat relaxing at home" loading="lazy" />
+        </figure>
+        <figure class="mosaic__item" data-caption="Adoption Saturday">
+          <img src="./assets/about4.webp" alt="Rescue dog enjoying a treat" loading="lazy" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 8 : CTA ============ -->
+  <section class="section section--cream" id="cta">
+    <div class="container">
+      <div class="promo" data-reveal>
+        <div>
+          <span class="eyebrow">Come and say hello</span>
+          <h2>Bring Your Friend Along</h2>
+          <p>Every Saturday we host a free 20-minute nutrition clinic with our in-store nutritionist, plus a no-pressure adoption fair in the courtyard. Coffee for humans, treats for the animals.</p>
+          <div class="flex gap-m wrap mt-l">
+            <a class="btn btn--light btn--lg" href="404.html">Book a Clinic Slot</a>
+            <a class="btn btn--ghost-light btn--lg" href="services.html">See Our Services</a>
+          </div>
+        </div>
+        <div class="promo__img" data-float="5.5">
+          <img src="./assets/about5.webp" alt="Dog and cat resting together on a sofa" loading="lazy" />
+        </div>
+      </div>
+
+      
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <p class="mt-l">A pet supplies store built by animal lovers for animal lovers. Vet-reviewed products, honest advice, and a 30-day happiness guarantee on every order.</p>
+        <div class="socials mt-l">
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook ico" aria-hidden="true" style="font-size:18px"></i></a>
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram ico" aria-hidden="true" style="font-size:18px"></i></a>
+          <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter ico" aria-hidden="true" style="font-size:16px"></i></a>
+     <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube ico" aria-hidden="true" style="font-size:18px"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Departments</h5>
+        <ul class="footer-links">
+          <li><a href="404.html">Dog Supplies</a></li>
+          <li><a href="404.html">Cat Supplies</a></li>
+          <li><a href="404.html">Grooming Studio</a></li>
+          <li><a href="404.html">Nutrition Plans</a></li>
+          <li><a href="404.html">Adoption Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot ico" aria-hidden="true" style="font-size:17px"></i><span>MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</span></li>
+          <li><i class="fa-solid fa-phone ico" aria-hidden="true" style="font-size:17px"></i><span><a href="404.html">9876543210</a><br /><a href="404.html">hello@stackly.com</a></span></li>
+          <li><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:17px"></i><span>Mon–Sat 8am – 8pm<br />Sunday 10am – 5pm</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> Stackly Pet Supplies. All rights reserved.</p>
+      <nav aria-label="Legal">
+        <a href="404.html">Privacy</a><a href="404.html">Policy</a><a href="404.html">Terms</a><a href="404.html">Conditions</a>
+      </nav>
+     
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

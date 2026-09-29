@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Stackly — Premium Pet Supplies, Food &amp; Care Store</title>
+<meta name="description" content="Stackly is a trusted online pet supplies store offering vet-approved food, toys, grooming, walking gear and adoption support for dogs, cats, birds and small pets. Free delivery over $49." />
+<meta name="theme-color" content="#123a32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ================= TOP BAR ================= -->
+
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Stackly home">
+      <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Main navigation">
+      <div class="nav__drawer-head">
+        <a class="brand" href="index.html" aria-label="Stackly home">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <button class="nav__drawer-close" type="button" aria-label="Close menu">
+          <i class="fa-solid fa-xmark ico" aria-hidden="true" style="font-size:20px"></i>
+        </button>
+      </div>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="services.html">Services</a></li>
+        <li><a class="nav__link" href="blog.html">Blog</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav__auth">
+        <a class="btn btn--outline" href="login.html">Log in</a>
+        <a class="btn btn--accent" href="signup.html">Sign up</a>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-auth header-auth--login" href="login.html">Log in</a>
+      <a class="header-auth header-auth--signup" href="signup.html">Sign up</a>
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <i class="fa-solid fa-bars ico" aria-hidden="true" style="font-size:22px"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-panel" id="searchPanel">
+    <div class="container">
+      <form class="search-panel__form" action="blog.html" method="get" role="search">
+        <i class="fa-solid fa-magnifying-glass ico" aria-hidden="true" style="font-size:20px"></i>
+        <input type="search" name="q" placeholder="Search food, toys, grooming, breed guides…" aria-label="Search products and articles" />
+        <button class="btn btn--sm" type="submit">Search</button>
+        <button class="icon-btn" type="button" id="searchClose" aria-label="Close search">
+          <i class="fa-solid fa-xmark ico" aria-hidden="true" style="font-size:18px"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ SECTION 1 : HERO ============ -->
+  <section class="hero" id="home">
+    <span class="hero__blob hero__blob--1" data-float="5"></span>
+    <span class="hero__blob hero__blob--2" data-float="6.5"></span>
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <span class="eyebrow" data-hero="eyebrow">Trusted by 40,000+ pet parents</span>
+        <h1 class="hero__title" data-hero="title">
+          Everything Your <span class="hl">Best Friend</span> Deserves
+        </h1>
+        <p class="hero__text" data-hero="text">
+          Vet-approved nutrition, durable play gear, and gentle grooming essentials —
+          hand-picked by animal lovers and delivered to your door in 24 hours.
+        </p>
+        <div class="hero__cta" data-hero="cta">
+          <a class="btn btn--lg" href="404.html">Shop All Products
+            <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:18px"></i>
+          </a>
+          <a class="btn btn--lg btn--outline" href="404.html">Browse Categories</a>
+        </div>
+        <div class="hero__stats" data-hero="stats">
+          <div class="hero__stat">
+            <strong data-count="40" data-suffix="K+">0</strong>
+            <span>Happy pet parents</span>
+          </div>
+          <div class="hero__stat">
+            <strong data-count="1250" data-suffix="+">0</strong>
+            <span>Products in store</span>
+          </div>
+          <div class="hero__stat">
+            <strong data-count="4.9" data-decimals="1">0</strong>
+            <span>Average rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-hero="visual">
+        <div class="hero__img-wrap">
+          <img src="assets/home hero retriever.webp"
+               alt="Happy golden retriever sitting in a sunny living room" width="900" height="1035" fetchpriority="high" />
+        </div>
+        <div class="float-card float-card--tl" data-hero="float">
+          <span class="float-card__icon" aria-hidden="true">
+            <i class="fa-solid fa-shield-halved ico" aria-hidden="true" style="font-size:20px"></i>
+          </span>
+          <span><strong>Vet Reviewed</strong><span>Every single formula</span></span>
+        </div>
+        <div class="float-card float-card--br" data-hero="float">
+          <span class="float-card__icon float-card__icon--accent" aria-hidden="true">
+            <i class="fa-solid fa-truck ico" aria-hidden="true" style="font-size:20px"></i>
+          </span>
+          <span><strong>24h Delivery</strong><span>Across the country</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 2 : TRUST MARQUEE ============ -->
+  <section class="trust" id="trust" aria-label="Certifications and guarantees">
+    <div class="trust__track">
+      <span class="trust__item"><i class="fa-solid fa-shield ico" aria-hidden="true" style="font-size:22px"></i> Veterinary Reviewed Formulas</span>
+      <span class="trust__item"><i class="fa-solid fa-award ico" aria-hidden="true" style="font-size:22px"></i> Certified Organic Ingredients</span>
+      <span class="trust__item"><i class="fa-solid fa-shield ico" aria-hidden="true" style="font-size:22px"></i> Cruelty-Free Testing</span>
+      <span class="trust__item"><i class="fa-solid fa-truck ico" aria-hidden="true" style="font-size:22px"></i> Carbon-Neutral Delivery</span>
+      <span class="trust__item"><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:22px"></i> 30-Day Happiness Guarantee</span>
+      <span class="trust__item"><i class="fa-solid fa-arrows-rotate ico" aria-hidden="true" style="font-size:22px"></i> 100% Secure Checkout</span>
+      <!-- duplicated for seamless loop -->
+      <span class="trust__item" aria-hidden="true"><i class="fa-solid fa-shield ico" aria-hidden="true" style="font-size:22px"></i> Veterinary Reviewed Formulas</span>
+      <span class="trust__item" aria-hidden="true"><i class="fa-solid fa-award ico" aria-hidden="true" style="font-size:22px"></i> Certified Organic Ingredients</span>
+      <span class="trust__item" aria-hidden="true"><i class="fa-solid fa-shield ico" aria-hidden="true" style="font-size:22px"></i> Cruelty-Free Testing</span>
+      <span class="trust__item" aria-hidden="true"><i class="fa-solid fa-truck ico" aria-hidden="true" style="font-size:22px"></i> Carbon-Neutral Delivery</span>
+      <span class="trust__item" aria-hidden="true"><i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:22px"></i> 30-Day Happiness Guarantee</span>
+      <span class="trust__item" aria-hidden="true"><i class="fa-solid fa-arrows-rotate ico" aria-hidden="true" style="font-size:22px"></i> 100% Secure Checkout</span>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3 : CATEGORIES ============ -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="sec-head sec-head--split" data-reveal>
+        <div>
+          <span class="eyebrow">Shop by category</span>
+          <h2>Find Exactly What They Love</h2>
+          <p class="lead max-620">From nutritious meals to squeaky toys and cosy beds, explore our curated departments chosen by pet professionals.</p>
+        </div>
+        <a class="btn btn--outline" href="404.html">View All Departments
+          <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:17px"></i>
+        </a>
+      </div>
+
+      <div class="grid g-4" data-stagger="0.08">
+        <a class="cat-card" href="404.html">
+          <img src="assets/home dog supplies.webp" alt="Small dog looking at camera" loading="lazy" />
+          <span class="cat-card__go" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square ico" aria-hidden="true" style="font-size:18px"></i></span>
+          <span class="cat-card__body">
+            <h3>Dog Supplies</h3>
+            <span>342 products</span>
+          </span>
+        </a>
+        <a class="cat-card" href="404.html">
+          <img src="assets/home cat supplies.webp" alt="Curious tabby cat" loading="lazy" />
+          <span class="cat-card__go" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square ico" aria-hidden="true" style="font-size:18px"></i></span>
+          <span class="cat-card__body">
+            <h3>Cat Supplies</h3>
+            <span>298 products</span>
+          </span>
+        </a>
+        <a class="cat-card" href="404.html">
+          <img src="./assets/home birds.webp" alt="Colourful parrot perched on a branch" loading="lazy" />
+          <span class="cat-card__go" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square ico" aria-hidden="true" style="font-size:18px"></i></span>
+          <span class="cat-card__body">
+            <h3>Bird &amp; Small Pets</h3>
+            <span>186 products</span>
+          </span>
+        </a>
+        <a class="cat-card" href="404.html">
+          <img src="./assets/home aquatics.webp" alt="Colourful tropical fish in an aquarium" loading="lazy" />
+          <span class="cat-card__go" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square ico" aria-hidden="true" style="font-size:18px"></i></span>
+          <span class="cat-card__body">
+            <h3>Aquatics</h3>
+            <span>154 products</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 4 : FEATURED PRODUCTS ============ -->
+  <section class="section section--cream" id="products">
+    <div class="container">
+      <div class="sec-head sec-head--split" data-reveal>
+        <div>
+          <span class="eyebrow">Bestsellers</span>
+          <h2>This Month&rsquo;s Paw-Picked Favourites</h2>
+          <p class="lead max-620">Top-rated picks from thousands of reviews — restocked weekly and shipped in recyclable packaging.</p>
+        </div>
+        <div class="filter-bar" data-filter-bar role="group" aria-label="Filter products by type">
+          <button class="is-active" type="button" data-filter="all">All</button>
+          <button type="button" data-filter="dog">Dogs</button>
+          <button type="button" data-filter="cat">Cats</button>
+          <button type="button" data-filter="comfort">Beds &amp; Comfort</button>
+        </div>
+      </div>
+
+      <div class="grid g-fill" data-filter-grid data-stagger="0.07">
+        <article class="product" data-cat="dog">
+          <div class="product__media">
+            <div class="product__flags">
+              <span class="tag tag--accent">-20%</span>
+              <span class="tag">Bestseller</span>
+            </div>
+            <button class="product__wish" type="button" aria-label="Save Wild Meadow Dog Food to wishlist" aria-pressed="false">
+              <i class="fa-regular fa-heart ico" aria-hidden="true" style="font-size:18px"></i>
+            </button>
+            <img src="assets/home wild meadow food.webp" alt="Bag of premium dry dog food with kibble" loading="lazy" />
+          </div>
+          <div class="product__body">
+            <span class="product__cat">Nutrition</span>
+            <h3 class="product__name">Wild Meadow Grain-Free Dry Food</h3>
+            <span class="product__rating"><span class="stars" aria-hidden="true">★★★★★</span> 4.9 (1,204)</span>
+            <div class="product__foot">
+              <span class="price">$32.99 <s>$41.00</s></span>
+              <button class="add-btn" type="button" aria-label="Add Wild Meadow Dog Food to cart">
+                <i class="fa-solid fa-plus ico" aria-hidden="true" style="font-size:19px"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-cat="dog">
+          <div class="product__media">
+            <div class="product__flags"><span class="tag tag--gold">New</span></div>
+            <button class="product__wish" type="button" aria-label="Save Feather Chew Toy to wishlist" aria-pressed="false">
+              <i class="fa-regular fa-heart ico" aria-hidden="true" style="font-size:18px"></i>
+            </button>
+            <img src="assets/home feather rope chew.webp" alt="Durable rope chew toy for dogs" loading="lazy" />
+          </div>
+          <div class="product__body">
+            <span class="product__cat">Toys</span>
+            <h3 class="product__name">Feather &amp; Rope Chew Bundle</h3>
+            <span class="product__rating"><span class="stars" aria-hidden="true">★★★★★</span> 4.8 (862)</span>
+            <div class="product__foot">
+              <span class="price">$18.50</span>
+              <button class="add-btn" type="button" aria-label="Add Chew Bundle to cart">
+                <i class="fa-solid fa-plus ico" aria-hidden="true" style="font-size:19px"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-cat="comfort">
+          <div class="product__media">
+            <div class="product__flags"><span class="tag tag--accent">Vet Pick</span></div>
+            <button class="product__wish" type="button" aria-label="Save Plush Tunnel Bed to wishlist" aria-pressed="false">
+              <i class="fa-regular fa-heart ico" aria-hidden="true" style="font-size:18px"></i>
+            </button>
+            <img src="./assets/home cats.webp" alt="Cozy plush pet bed" loading="lazy" />
+          </div>
+          <div class="product__body">
+            <span class="product__cat">Comfort</span>
+            <h3 class="product__name">Cloud Rest Plush Tunnel Bed</h3>
+            <span class="product__rating"><span class="stars" aria-hidden="true">★★★★☆</span> 4.7 (517)</span>
+            <div class="product__foot">
+              <span class="price">$54.00 <s>$67.50</s></span>
+              <button class="add-btn" type="button" aria-label="Add Cloud Rest Bed to cart">
+                <i class="fa-solid fa-plus ico" aria-hidden="true" style="font-size:19px"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-cat="cat">
+          <div class="product__media">
+            <div class="product__flags"><span class="tag">Eco</span></div>
+            <button class="product__wish" type="button" aria-label="Save Feather Wanderer Wand to wishlist" aria-pressed="false">
+              <i class="fa-regular fa-heart ico" aria-hidden="true" style="font-size:18px"></i>
+            </button>
+            <img src="assets/home wanderer wand.webp" alt="Cat wand toy with feathers" loading="lazy" />
+          </div>
+          <div class="product__body">
+            <span class="product__cat">Play</span>
+            <h3 class="product__name">Feather Wanderer Wand Trio</h3>
+            <span class="product__rating"><span class="stars" aria-hidden="true">★★★★★</span> 4.9 (733)</span>
+            <div class="product__foot">
+              <span class="price">$12.99</span>
+              <button class="add-btn" type="button" aria-label="Add Wanderer Wand Trio to cart">
+                <i class="fa-solid fa-plus ico" aria-hidden="true" style="font-size:19px"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-l" data-reveal>
+        <a class="btn btn--lg btn--light" href="404.html">Explore All 1,250+ Products
+          <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:18px"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 5 : WHY CHOOSE US (with stats) ============ -->
+  <section class="section section--dark" id="why">
+    <div class="container">
+      <div class="split">
+        <div class="split__media" data-reveal="left">
+          <img src="assets/home why we.webp" alt="Pet owner hugging a dog on a sofa at home" loading="lazy" />
+          <div class="split__badge" data-float="4">
+            <strong>12</strong>
+            <span>Years of care</span>
+          </div>
+        </div>
+        <div data-reveal="right">
+          <span class="eyebrow">Why choose us</span>
+          <h2>Pet Care, Minus the Guesswork</h2>
+          <p class="lead">We started Paw &amp; Whisker because choosing the right food, gear and care for a pet should never feel overwhelming. So we build expert-vetted ranges, honest guides and real human support.</p>
+          <ul class="check-list">
+            <li>
+              <i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i>
+              <span><strong>Nutritionists on staff.</strong> Free meal-plan reviews with a certified animal nutritionist.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i>
+              <span><strong>Durability you can test.</strong> 90-day chew &amp; scratch warranty on all toys and furniture.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i>
+              <span><strong>Kind to every body.</strong> Sustainable, recyclable packaging with no plastic fillers.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:20px"></i>
+              <span><strong>Real humans, 7 days.</strong> Chat, call or email a pet-care coach — never a bot.</span>
+            </li>
+          </ul>
+          <div class="flex gap-m wrap mt-l">
+            <a class="btn btn--accent" href="about.html">Our Story</a>
+            <a class="btn btn--ghost-light" href="contact.html">Talk to a Coach</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid g-4 mt-l" data-stagger="0.08">
+        <div class="stat-box">
+          <span class="card-icon card-icon--accent" aria-hidden="true"><i class="fa-solid fa-user ico" aria-hidden="true"></i></span>
+          <span class="stat-num" data-count="40" data-suffix="K+">0</span>
+          <p>Pet parents served</p>
+        </div>
+        <div class="stat-box">
+          <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-truck ico" aria-hidden="true"></i></span>
+          <span class="stat-num" data-count="1250" data-suffix="+">0</span>
+          <p>Products stocked</p>
+        </div>
+        <div class="stat-box">
+          <span class="card-icon card-icon--gold" aria-hidden="true"><i class="fa-solid fa-shield-halved ico" aria-hidden="true"></i></span>
+          <span class="stat-num" data-count="18" data-suffix="">0</span>
+          <p>Vet partners</p>
+        </div>
+        <div class="stat-box">
+          <span class="card-icon card-icon--accent" aria-hidden="true"><i class="fa-solid fa-star ico" aria-hidden="true"></i></span>
+          <span class="stat-num" data-count="4.9" data-decimals="1">0</span>
+          <p>Average rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 6 : DEAL OF THE WEEK ============ -->
+  <section class="section" id="offer">
+    <div class="container">
+      <div class="promo" data-reveal>
+        <div>
+          <span class="eyebrow">Deal of the week</span>
+          <h2>Save 30% On All Starter Bundles</h2>
+          <p>Build a complete first-month kit for a new puppy or kitten — food, bowls, a bed, chew toys and a starter grooming set, curated by our care team and delivered together.</p>
+          <div class="promo__code">
+            <i class="fa-solid fa-ticket ico" aria-hidden="true" style="font-size:22px"></i>
+            PAW30
+          </div>
+          <div class="promo__timer" data-countdown="2026-12-31T23:59:59">
+            <div class="timer-box"><strong data-d>02</strong><span>Days</span></div>
+            <div class="timer-box"><strong data-h>11</strong><span>Hours</span></div>
+            <div class="timer-box"><strong data-m>45</strong><span>Mins</span></div>
+            <div class="timer-box"><strong data-s>09</strong><span>Secs</span></div>
+          </div>
+          <div class="flex gap-m wrap mt-l">
+            <a class="btn btn--light btn--lg" href="404.html">Claim the Bundle</a>
+            <a class="btn btn--ghost-light btn--lg" href="404.html">Ask a Question</a>
+          </div>
+        </div>
+        <div class="promo__img" data-float="5.5">
+          <img src="assets/home starter bundles.webp" alt="Dog wearing glasses next to stacked pet supply bundles" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 7 : TESTIMONIALS ============ -->
+  <section class="section section--cream" id="reviews">
+    <div class="container">
+      <div class="sec-head sec-head--center max-720 sec-head" data-reveal>
+        <span class="eyebrow">Customer stories</span>
+        <h2>40,000 Pet Parents. 40,000 Happy Tails.</h2>
+        <p class="lead">Real reviews from verified orders — we never edit or remove a critical review.</p>
+      </div>
+
+      <div class="rel" data-reveal>
+        <div class="grid g-3" data-carousel>
+          <article class="quote-card is-active">
+            <span class="quote-card__mark" aria-hidden="true">&ldquo;</span>
+            <div class="product__rating" style="margin-bottom:.6rem"><span class="stars" aria-hidden="true">★★★★★</span> 5.0</div>
+            <p>My rescue pup was terrified of everything. The care coach matched her diet and sent a free sample pack — she now pulls the trolley herself. Genuinely life-changing service.</p>
+            <div class="quote-card__who">
+              <img class="avatar" src="assets/home review marta.webp" alt="Portrait of Marta, verified customer" loading="lazy" />
+              <span><strong>Marta K.</strong><span>Verified buyer &middot; Berlin</span></span>
+            </div>
+          </article>
+          <article class="quote-card">
+            <span class="quote-card__mark" aria-hidden="true">&ldquo;</span>
+            <div class="product__rating" style="margin-bottom:.6rem"><span class="stars" aria-hidden="true">★★★★★</span> 4.9</div>
+            <p>I have three cats and a very specific idea of what &ldquo;good litter&rdquo; means. This store passed the test on the first order and the subscription never missed a cycle.</p>
+            <div class="quote-card__who">
+              <img class="avatar" src="assets/home review daniel.webp" alt="Portrait of Daniel, verified customer" loading="lazy" />
+              <span><strong>Daniel R.</strong><span>Verified buyer &middot; Manchester</span></span>
+            </div>
+          </article>
+          <article class="quote-card">
+            <span class="quote-card__mark" aria-hidden="true">&ldquo;</span>
+            <div class="product__rating" style="margin-bottom:.6rem"><span class="stars" aria-hidden="true">★★★★★</span> 5.0</div>
+            <p>Booked the full grooming package for our anxious shih tzu. They messaged before, during and after, with photos. He walks out looking like a magazine cover.</p>
+            <div class="quote-card__who">
+              <img class="avatar" src="assets/home review aisha.webp" alt="Portrait of Aisha, verified customer" loading="lazy" />
+              <span><strong>Aisha N.</strong><span>Verified buyer &middot; Toronto</span></span>
+            </div>
+          </article>
+        </div>
+        <div class="flex center gap-s mt-l" role="tablist" aria-label="Review slides">
+          <button class="icon-btn is-active" type="button" data-carousel-dot aria-label="Review 1"></button>
+          <button class="icon-btn" type="button" data-carousel-dot aria-label="Review 2"></button>
+          <button class="icon-btn" type="button" data-carousel-dot aria-label="Review 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 8 : BLOG PREVIEW ============ -->
+  <section class="section" id="journal">
+    <div class="container">
+      <div class="sec-head sec-head--split" data-reveal>
+        <div>
+          <span class="eyebrow">The Paw &amp; Whisker journal</span>
+          <h2>Guides From People Who Love Pets</h2>
+          <p class="lead max-620">Practical, vet-checked writing on nutrition, training, grooming and enrichment.</p>
+        </div>
+        <a class="btn btn--outline" href="404.html">Read the Blog
+          <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:17px"></i>
+        </a>
+      </div>
+
+      <div class="grid g-3" data-stagger="0.1">
+        <article class="media-card post-card">
+          <div class="media-card__img">
+            <span class="tag tag--float">Nutrition</span>
+            <img src="assets/cat brushing.webp" alt="Cat eating from a ceramic bowl" loading="lazy" />
+          </div>
+          <div class="media-card__body">
+            <div class="post-meta">
+              <span><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:14px"></i> 6 min read</span>
+              <span>12 Mar 2026</span>
+            </div>
+            <h3 class="post-card__title"><a href="404.html">How to read a pet food label (without a degree)</a></h3>
+            <p class="post-card__excerpt">Protein first, named meat over &ldquo;meat meal&rdquo;, and what the guaranteed analysis numbers actually mean for your pet.</p>
+            <div class="post-card__foot">
+              <span class="post-meta mb-0">
+                <img class="avatar" style="width:34px;height:34px" src="assets/dr elena vasquez-sm.webp" alt="" loading="lazy" />
+                Dr. Elena Vasquez
+              </span>
+              <a class="link-arrow" href="404.html">Read
+                <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:16px"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="media-card post-card">
+          <div class="media-card__img">
+            <span class="tag tag--float tag--accent">Grooming</span>
+            <img src="assets/dog grooming.webp" alt="Dog being brushed during grooming" loading="lazy" />
+          </div>
+          <div class="media-card__body">
+            <div class="post-meta">
+              <span><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:14px"></i> 8 min read</span>
+              <span>28 Feb 2026</span>
+            </div>
+            <h3 class="post-card__title"><a href="404.html">A calm 12-step grooming routine for anxious dogs</a></h3>
+            <p class="post-card__excerpt">Desensitisation beats force every time. A certified groomer walks through the full at-home sequence.</p>
+            <div class="post-card__foot">
+              <span class="post-meta mb-0">
+                <img class="avatar" style="width:34px;height:34px" src="assets/avatar tom harker.webp" alt="" loading="lazy" />
+                Tom Harker
+              </span>
+              <a class="link-arrow" href="404.html">Read
+                <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:16px"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="media-card post-card">
+          <div class="media-card__img">
+            <span class="tag tag--float tag--gold">Enrichment</span>
+            <img src="./assets/home enrichment.webp" alt="Cat playing with a feather wand toy" loading="lazy" />
+          </div>
+          <div class="media-card__body">
+            <div class="post-meta">
+              <span><i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:14px"></i> 5 min read</span>
+              <span>14 Feb 2026</span>
+            </div>
+            <h3 class="post-card__title"><a href="404.html">Ten enrichment games that burn calories indoors</a></h3>
+            <p class="post-card__excerpt">Rainy-season boredom is real. These low-cost games keep brains busy and stop the destructive chewing.</p>
+            <div class="post-card__foot">
+              <span class="post-meta mb-0">
+                <img class="avatar" style="width:34px;height:34px" src="assets/priya raman-sm.webp" alt="" loading="lazy" />
+                Priya Raman
+              </span>
+              <a class="link-arrow" href="404.html">Read
+                <i class="fa-solid fa-arrow-right ico" aria-hidden="true" style="font-size:16px"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 9 : NEWSLETTER / CTA ============ -->
+  <section class="section section--brand" id="newsletter">
+    <div class="paw-field" aria-hidden="true">
+      <span style="top:12%;left:6%;font-size:38px">🐾</span>
+      <span style="top:70%;left:22%;font-size:26px">🐾</span>
+      <span style="top:22%;right:10%;font-size:32px">🐾</span>
+      <span style="bottom:14%;right:24%;font-size:20px">🐾</span>
+    </div>
+    <div class="container rel">
+      <div class="grid g-2 items-center">
+        <div data-reveal="left">
+          <span class="eyebrow">Join the pack</span>
+          <h2>Get 15% Off Your First Order</h2>
+          <p>One friendly email a week: new arrivals, care tips and members-only bundles. No spam, unsubscribe any time.</p>
+        </div>
+        <div data-reveal="right">
+          <form class="newsletter-form" data-validate data-gmail-only data-redirect="404.html" data-success="Welcome to the pack! Your 15% code is on its way." novalidate>
+            <div class="subscribe">
+              <label class="skip-link" for="nl-home">Email address</label>
+              <span class="subscribe__field">
+                <input id="nl-home" name="email" type="email" placeholder="you@gmail.com" required aria-describedby="nl-home-error" autocomplete="email" />
+                <p class="field-error" id="nl-home-error" data-inline-error role="alert"></p>
+              </span>
+              <button class="btn btn--accent" type="submit">Subscribe</button>
+            </div>
+            <p class="form-note mt-l" style="color:var(--brand-200)">
+              <i class="fa-solid fa-shield-halved ico" aria-hidden="true" style="font-size:17px"></i>
+              We never share your details. Read our privacy promise in the footer.
+            </p>
+            <div class="form-alert" style="background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.25)">
+              <i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i>
+              You&rsquo;re in! Check your inbox for your 15% welcome code.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <p class="mt-l">A pet supplies store built by animal lovers for animal lovers. Vet-reviewed products, honest advice, and a 30-day happiness guarantee on every order.</p>
+        <div class="socials mt-l">
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook ico" aria-hidden="true" style="font-size:18px"></i></a>
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram ico" aria-hidden="true" style="font-size:18px"></i></a>
+          <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter ico" aria-hidden="true" style="font-size:16px"></i></a>
+          <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube ico" aria-hidden="true" style="font-size:18px"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h5>Explore</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Departments</h5>
+        <ul class="footer-links">
+          <li><a href="404.html">Dog Supplies</a></li>
+          <li><a href="404.html">Cat Supplies</a></li>
+          <li><a href="404.html">Grooming Studio</a></li>
+          <li><a href="404.html">Nutrition Plans</a></li>
+          <li><a href="404.html">Adoption Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Get in touch</h5>
+        <ul class="footer-contact">
+          <li>
+            <i class="fa-solid fa-location-dot ico" aria-hidden="true" style="font-size:17px"></i>
+            <span>MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone ico" aria-hidden="true" style="font-size:17px"></i>
+            <span><a href="404.html">9876543210</a><br /><a href="404.html">hello@stackly.com</a></span>
+          </li>
+          <li>
+            <i class="fa-regular fa-clock ico" aria-hidden="true" style="font-size:17px"></i>
+            <span>Mon–Sat 8am – 8pm<br />Sunday 10am – 5pm</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> Stackly Pet Supplies. All rights reserved.</p>
+      <nav aria-label="Legal">
+        <a href="404.html">Privacy</a>
+        <a href="404.html">Policy</a>
+        <a href="404.html">Terms</a>
+        <a href="404.html">Conditions</a>
+      </nav>
+     
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING UI ================= -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

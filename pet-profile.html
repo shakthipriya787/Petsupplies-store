@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pet Profiles — Paw &amp; Whisker Pet Supplies</title>
+<meta name="description" content="Manage your pet profiles, care preferences and upcoming visits with Paw &amp; Whisker." />
+<meta name="theme-color" content="#123a32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<main id="main" class="dashboard-page">
+  <div class="dashboard-frame">
+    <div class="dashboard-shell">
+      <div class="dashboard-mobilebar">
+        <a class="brand" href="user-dashboard.html" aria-label="Stackly dashboard">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+        </a>
+        <button class="icon-btn dashboard-mobilebar__toggle" type="button" aria-expanded="false" aria-controls="dashboard-menu" aria-label="Open menu">
+          <i class="fa-solid fa-bars ico dashboard-toggle__open" aria-hidden="true" style="font-size:22px"></i>
+          <i class="fa-solid fa-xmark ico dashboard-toggle__close" aria-hidden="true" style="font-size:22px"></i>
+        </button>
+      </div>
+      <aside id="dashboard-menu" class="dashboard-sidebar dashboard-sidebar--admin" aria-label="Account dashboard navigation">
+        <a class="brand" href="user-dashboard.html" aria-label="Stackly dashboard">
+          <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+          <span class="brand__text">
+            <span class="brand__tag">My Dashboard</span>
+          </span>
+        </a>
+
+        <nav class="dashboard-nav">
+          <a class="dashboard-nav__link" href="user-dashboard.html">
+            <i class="fa-solid fa-table-cells-large ico" aria-hidden="true"></i>
+            Overview
+          </a>
+          
+          <a class="dashboard-nav__link" href="saved-items.html">
+            <i class="fa-regular fa-heart ico" aria-hidden="true"></i>
+            Saved Items
+          </a>
+          <a class="dashboard-nav__link" href="pet-profile.html" aria-current="page">
+            <i class="fa-solid fa-paw ico" aria-hidden="true"></i>
+            Pet Profiles
+          </a>
+          <a class="dashboard-nav__link" href="account.html">
+            <i class="fa-solid fa-user ico" aria-hidden="true"></i>
+            Account
+          </a>
+        </nav>
+
+        <div class="dashboard-help">
+          <strong>Need a hand?</strong>
+          <p>Our care team is here every day.</p>
+          <a href="contact.html#form">Contact support <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="dashboard-sidebar__foot">
+          <a class="dashboard-logout" href="login.html" data-logout>
+            <i class="fa-solid fa-arrow-right-from-bracket ico" aria-hidden="true"></i>
+            Log out
+          </a>
+        </div>
+      </aside>
+
+      <div class="dashboard-main">
+        <section class="dashboard-topbar dashboard-page-topbar" aria-labelledby="pets-page-title">
+          <div>
+            <span class="eyebrow">Your Paw &amp; Whisker</span>
+            <h1 id="pets-page-title">Pet profiles</h1>
+            <p>Keep each pet’s details in one place for more personal recommendations.</p>
+          </div>
+          <div class="dashboard-topbar__actions">
+            <a class="btn btn--sm" href="#add-pet">Add a pet</a>
+            <div class="dashboard-identity"><strong class="dashboard-identity__name" data-user-name>Jamie Davis</strong><span class="dashboard-identity__email" data-user-email>jamie@gmail.com</span></div>
+            <span class="dashboard-avatar" data-user-avatar aria-label="Jamie Davis">JD</span>
+          </div>
+        </section>
+
+        <div class="dashboard-content-grid">
+          <div class="dashboard-stack">
+            <section class="dashboard-card" aria-labelledby="profiles-title">
+              <div class="dashboard-card__head">
+                <div><h2 id="profiles-title">Your pets</h2><p>2 happy companions in your care.</p></div>
+                <span class="dashboard-status dashboard-status--green">Profiles complete</span>
+              </div>
+
+              <div class="dashboard-profile-list">
+                <article class="dashboard-profile-card">
+                  <div class="dashboard-profile-card__body">
+                    <div class="dashboard-profile-card__top"><span class="tag">Dog</span><a class="dashboard-card__link" href="#add-pet">Edit profile</a></div>
+                    <h3>Milo</h3>
+                    <p class="muted">Golden Retriever · 4 years old</p>
+                    <dl class="dashboard-profile-details">
+                      <div><dt>Weight</dt><dd>29 kg</dd></div>
+                      <div><dt>Food plan</dt><dd>Grain-free</dd></div>
+                      <div><dt>Allergies</dt><dd>None recorded</dd></div>
+                      <div><dt>Next visit</dt><dd>Oct 03, 2026</dd></div>
+                    </dl>
+                    <div class="dashboard-profile-card__actions">
+                      <a class="btn btn--outline btn--sm" href="saved-items.html">View Milo’s picks</a>
+                      <a class="dashboard-card__link" href="services.html#booking">Book a service <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="dashboard-profile-card">
+                  <div class="dashboard-profile-card__body">
+                    <div class="dashboard-profile-card__top"><span class="tag tag--accent">Cat</span><a class="dashboard-card__link" href="#add-pet">Edit profile</a></div>
+                    <h3>Luna</h3>
+                    <p class="muted">Domestic Shorthair · 2 years old</p>
+                    <dl class="dashboard-profile-details">
+                      <div><dt>Weight</dt><dd>4.8 kg</dd></div>
+                      <div><dt>Food plan</dt><dd>Indoor recipe</dd></div>
+                      <div><dt>Allergies</dt><dd>Chicken</dd></div>
+                      <div><dt>Next visit</dt><dd>Not scheduled</dd></div>
+                    </dl>
+                    <div class="dashboard-profile-card__actions">
+                      <a class="btn btn--outline btn--sm" href="saved-items.html">View Luna’s picks</a>
+                      <a class="dashboard-card__link" href="services.html#booking">Book a service <i class="fa-solid fa-arrow-right ico" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+
+          <aside class="dashboard-stack">
+            <form class="form-card dashboard-profile-form" id="add-pet" data-validate data-success="Your pet profile request has been received.">
+              <div class="dashboard-card__head"><div><h2>Add a pet</h2><p>We’ll tailor product picks around them.</p></div></div>
+              <div class="form-grid">
+                <div class="field field--full"><label for="pet-name">Pet name <span class="req">*</span></label><input id="pet-name" name="petName" type="text" placeholder="e.g. Charlie" required /><span class="err">Please enter your pet’s name.</span></div>
+                <div class="field"><label for="pet-type">Pet type <span class="req">*</span></label><select id="pet-type" name="petType" required><option value="">Choose one</option><option>Dog</option><option>Cat</option><option>Bird</option><option>Small pet</option></select><span class="err">Please choose a pet type.</span></div>
+                <div class="field"><label for="pet-breed">Breed</label><input id="pet-breed" name="petBreed" type="text" placeholder="e.g. Labrador" /></div>
+                <div class="field field--full"><label for="pet-notes">Care notes</label><textarea id="pet-notes" name="petNotes" placeholder="Allergies, dietary needs or little quirks…"></textarea></div>
+              </div>
+              <button class="btn btn--block mt-l" type="submit">Save pet profile</button>
+            </form>
+
+            <section class="dashboard-card" aria-labelledby="care-title">
+              <div class="dashboard-card__head"><div><h2 id="care-title">Care preferences</h2><p>Helpful defaults for every visit.</p></div></div>
+              <div class="dashboard-preference-list">
+                <div class="dashboard-preference"><span class="dashboard-preference__icon" aria-hidden="true"><i class="fa-solid fa-shield-halved ico" aria-hidden="true"></i></span><div><strong>Vet-approved products</strong><span>Prioritise formulas reviewed by our care team.</span></div></div>
+                <div class="dashboard-preference"><span class="dashboard-preference__icon" aria-hidden="true"><i class="fa-regular fa-clock ico" aria-hidden="true"></i></span><div><strong>Reminder-friendly</strong><span>Send me gentle reminders for grooming and checkups.</span></div></div>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Log In — Paw &amp; Whisker Pet Supplies</title>
+<meta name="description" content="Log in to your Paw &amp; Whisker account to view orders, manage favourites and enjoy a faster checkout." />
+<meta name="theme-color" content="#123a32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<main id="main" class="auth-page auth-page--bare">
+  <div class="auth-topbar">
+    <a class="brand" href="index.html" aria-label="Stackly home">
+      <img class="brand__logo" src="assets/stackly-logo.webp" alt="Stackly" width="120" height="49" />
+    </a>
+    <a class="auth-back" href="index.html">
+      <i class="fa-solid fa-arrow-left ico" aria-hidden="true"></i>
+      Back to home
+    </a>
+  </div>
+
+  <div class="auth-shell">
+    <h1 class="auth-shell__title">Welcome Back to the Pack</h1>
+    <section class="auth-aside" data-reveal="left">
+      <div class="auth-aside__copy">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span class="sep" aria-hidden="true">/</span><span aria-current="page">Log in</span>
+        </nav>
+        <span class="eyebrow">Your pet parent account</span>
+        <h1>Welcome Back to the Pack</h1>
+        <p>Pick up where you left off and make every visit to Paw &amp; Whisker feel like home.</p>
+        <ul class="auth-benefits">
+          <li><i class="fa-solid fa-check ico" aria-hidden="true"></i><span>Check out faster with saved details</span></li>
+          <li><i class="fa-solid fa-check ico" aria-hidden="true"></i><span>Keep your favourite products close</span></li>
+          <li><i class="fa-solid fa-check ico" aria-hidden="true"></i><span>See orders and delivery updates</span></li>
+        </ul>
+      </div>
+      <div class="auth-media">
+        <img src="./assets/login.webp" alt="Friendly pet care team ready to help" width="900" height="600" />
+      </div>
+    </section>
+
+    <section class="auth-form-panel" data-reveal="right">
+      <div class="auth-form-card">
+        <span class="eyebrow">Account access</span>
+        <h2>Log in to your account</h2>
+
+        <form class="auth-form" data-validate data-no-toast data-auth-form data-success="Thanks! Your login details are valid." novalidate>
+          <div class="field">
+            <label for="login-email">Email address <span class="req">*</span></label>
+            <input id="login-email" name="email" type="email" placeholder="jane@gmail.com" autocomplete="email" required data-gmail-domain data-err="Only @gmail.com email addresses are accepted." />
+            <span class="err">Only @gmail.com email addresses are accepted.</span>
+          </div>
+
+          <div class="field">
+            <label for="login-password">Password <span class="req">*</span></label>
+            <div class="password-control">
+              <input id="login-password" name="password" type="password" placeholder="At least 5 characters" autocomplete="current-password" minlength="5" data-minlength="5" data-err="Password must be at least 5 characters long." required />
+              <button class="password-toggle" type="button" data-password-toggle="login-password" aria-label="Show password" aria-pressed="false"><i class="fa-regular fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <span class="err">Password must be at least 5 characters long.</span>
+          </div>
+
+          <div class="field">
+            <label for="login-role">Role <span class="req">*</span></label>
+            <select id="login-role" name="role" required>
+              <option value="">Choose a role…</option>
+              <option value="user">User</option>
+              <option value="admin">Admin</option>
+            </select>
+            <span class="err">Please select a role.</span>
+          </div>
+
+          <div class="form-options">
+            <label class="checkbox">
+              <input type="checkbox" name="remember" />
+              <span>Keep me logged in</span>
+            </label>
+            <a href="404.html">Forgot password?</a>
+          </div>
+
+          <button class="btn btn--lg btn--block" type="submit">Log In</button>
+
+          <p class="auth-switch auth-switch--after">New to Stackly?
+            <a class="btn btn--sm" href="signup.html">Sign Up</a>
+          </p>
+
+          <p class="auth-security">
+            <i class="fa-solid fa-lock ico" aria-hidden="true"></i>
+            Your login details are handled securely and are never shared.
+          </p>
+
+          <div class="form-alert mt-l" role="status">
+            <i class="fa-solid fa-check ico" aria-hidden="true" style="font-size:18px"></i>
+            Your login details are valid.
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
