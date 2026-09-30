@@ -1,0 +1,44 @@
+/* Shared layout corrections for main pages and every dashboard route. */
+.stackly-loader {position:fixed;inset:0;z-index:10000;background:#fdfaf5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;transition:opacity .25s ease;animation:loader-failsafe 0s 5s forwards;}
+.stackly-loader.is-loaded {opacity:0;visibility:hidden;pointer-events:none;}
+.stackly-loader__ring {width:38px;height:38px;border:3px solid #dce5df;border-top-color:#e87935;border-radius:50%;animation:stackly-spin .8s linear infinite;}
+@keyframes stackly-spin {to{transform:rotate(360deg)}}
+@keyframes loader-failsafe {to{visibility:hidden;pointer-events:none}}
+.hero__copy .hero__text {font-size:1rem;line-height:1.7;}
+.hero__copy .hero__cta .btn {font-size:.875rem;}
+/* the 5 main pages (index/about/services/blog/contact) share .site-header — shrink button type one step */
+body:has(.site-header) .btn {font-size:var(--step--1);padding:.8rem 1.6rem;}
+body:has(.site-header) .btn--lg {font-size:var(--step-0);padding:.95rem 1.9rem;}
+body:has(.site-header) .btn--sm {font-size:.75rem;padding:.55rem 1.1rem;}
+#reviews [data-carousel] {display:block;max-width:740px;margin-inline:auto;}
+#reviews [data-carousel] > .quote-card {display:none;height:auto;}
+#reviews [data-carousel] > .quote-card.is-active {display:flex;flex-direction:column;opacity:1;visibility:visible;transform:none;animation:quote-slide-in .5s var(--ease-out) both;}
+@keyframes quote-slide-in {from{opacity:0;transform:translateY(16px) scale(.99)}to{opacity:1;transform:none}}
+.quote-nav {display:flex;align-items:center;justify-content:center;gap:1.1rem;margin-top:clamp(1.5rem,3vw,2.2rem);}
+.quote-nav__dots {display:flex;align-items:center;gap:.65rem;}
+.quote-nav__arrow {width:44px;height:44px;flex:0 0 auto;}
+#reviews [data-carousel-dot] {display:inline-block;}
+.stars .fa-star {font-size:.78rem;}
+.article-read {font-size:.875rem;margin:1rem 0;align-self:flex-start;}
+.dashboard-fixed-header {position:fixed;inset:0 0 auto 280px;height:88px;z-index:990;background:#f7f8f5;border-bottom:1px solid #dde5df;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 32px;}
+.dashboard-fixed-header__title {font-family:Poppins,sans-serif;font-size:1.4rem;font-weight:700;margin:0;min-width:0;}
+.dashboard-fixed-header__profile {display:flex;align-items:center;gap:12px;margin-left:auto;}
+.dashboard-fixed-header .dashboard-identity {display:flex;flex-direction:column;align-items:flex-end;}
+.dashboard-fixed-header .dashboard-avatar {flex-shrink:0;}
+@media(min-width:1025px) {
+ .dashboard-shell {grid-template-columns:280px minmax(0,1fr);}
+ .dashboard-sidebar {width:280px;}
+ .dashboard-main {padding-top:112px;}
+ .dashboard-sidebar > .brand {display:flex;flex-direction:column;align-items:flex-start;gap:8px;}
+ .dashboard-sidebar > .brand .brand__text,.dashboard-sidebar > .brand .brand__tag {display:block;}
+}
+@media(max-width:1024px) {
+ .nav {inset:0;width:100%;max-width:none;height:100vh;height:100dvh;}
+ .dashboard-sidebar {inset:0;width:100%;max-width:none;height:100vh;height:100dvh;padding-top:calc(var(--dashbar-h) + 20px);}
+ .dashboard-sidebar .brand__text {display:none;}
+ .dashboard-fixed-header {display:none;}
+ .dashboard-mobilebar {z-index:1000;gap:8px;}
+ .dashboard-mobile-title {color:white;font-size:.9rem;font-weight:700;min-width:0;flex:1;text-align:center;line-height:1.25;}
+ .dashboard-mobilebar .brand__logo {max-width:105px;}
+}
+@media(prefers-reduced-motion:reduce) {.stackly-loader__ring {animation:none;}}

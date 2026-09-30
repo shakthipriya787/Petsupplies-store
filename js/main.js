@@ -44,6 +44,16 @@
   var RETURN_KEY = "stackly:returnTo";
   var RETURN_MAX_AGE = 30 * 60 * 1000;
 
+  /* Date styles for liveDate() — keyed by [data-date-mode]. */
+  var DATE_MODES = {
+    long:   { weekday: "long", month: "long",  day: "numeric", year: "numeric" },
+    short:  { weekday: "long", month: "short", day: "numeric", year: "numeric" },
+    medium: { weekday: "short", month: "long", day: "numeric", year: "numeric" },
+    day:    { weekday: "long", month: "long", day: "numeric" },
+    full:   { weekday: "long", month: "long", day: "numeric", year: "numeric",
+              hour: "numeric", minute: "2-digit" }
+  };
+
   if ("scrollRestoration" in history) history.scrollRestoration = "manual";
   document.addEventListener("click", function(e) {
     var a = e.target.closest('a[href], button.product__wish, button.add-btn');
@@ -88,6 +98,7 @@
   cart();
   countdown();
   year();
+  liveDate();
   highlightNav();
   searchPanel();
 
@@ -716,25 +727,40 @@
 
     var show = function (i) {
       index = (i + slides.length) % slides.length;
-      slides.forEach(function (s, n) { s.classList.toggle("is-active", n === index); });
+      slides.forEach(function (s, n) { s.classList.toggle("is-active", n === index); s.hidden = n !== index; s.setAttribute("aria-hidden", String(n !== index)); });
       var dots = document.querySelectorAll("[data-carousel-dot]");
-      dots.forEach(function (d, n) { d.classList.toggle("is-active", n === index); });
+      dots.forEach(function (d, n) { d.classList.toggle("is-active", n === index); d.setAttribute("aria-pressed", String(n === index)); });
     };
 
     var play = function () {
-      if (prefersReduced || !hasGSAP) return;
+      clearInterval(timer);
+      if (prefersReduced || document.hidden) return;
       timer = setInterval(function () { show(index + 1); }, 5200);
     };
     var stop = function () { clearInterval(timer); };
 
+    var step = function (dir) { stop(); show(index + dir); play(); };
+
     document.querySelectorAll("[data-carousel-dot]").forEach(function (dot, n) {
-      dot.addEventListener("click", function () { stop(); show(n); play(); });
+      dot.addEventListener("click", function () { step(n - index); });
+    });
+    document.querySelectorAll("[data-carousel-prev]").forEach(function (btn) {
+      btn.addEventListener("click", function () { step(-1); });
+    });
+    document.querySelectorAll("[data-carousel-next]").forEach(function (btn) {
+      btn.addEventListener("click", function () { step(1); });
     });
 
     var root = track.closest("section") || track;
+    /* Only pause for keyboard focus so mouse clicks on the arrows keep auto-rotation alive. */
+    var keyboardFocus = function (el) {
+      try { return !!(el && el.matches && el.matches(":focus-visible")); } catch (err) { return true; }
+    };
     root.addEventListener("mouseenter", stop);
     root.addEventListener("mouseleave", play);
-    root.addEventListener("focusin", stop);
+    root.addEventListener("focusin", function (e) { if (keyboardFocus(e.target)) stop(); });
+    root.addEventListener("focusout", function(e) { if (!root.contains(e.relatedTarget)) play(); });
+    document.addEventListener("visibilitychange", function() { stop(); if (!document.hidden) play(); });
 
     show(0);
     play();
@@ -1248,6 +1274,40 @@
     document.querySelectorAll("[data-year]").forEach(function (el) {
       el.textContent = new Date().getFullYear();
     });
+  }
+
+  /* ------------------------------------------------------------------
+     18b. Live date ([data-today]) — "Friday, September 25, 2026".
+     Re-renders on the tab's own clock schedule, and again on focus or
+     on return to the tab, so an overnight / timezone change is picked up
+     without a reload. [data-date-mode] picks the style; [data-time]
+     adds a live clock to the same line. DATE_MODES lives with the other
+     constants at the top, because the boot calls below run before the
+     body of this function and would read it as undefined.
+  ------------------------------------------------------------------ */
+  function liveDate() {
+    var nodes = document.querySelectorAll("[data-today]");
+    if (!nodes.length) return;
+
+    var render = function () {
+      var now = new Date();
+      nodes.forEach(function (el) {
+        var mode = DATE_MODES[el.getAttribute("data-date-mode") || "short"] || DATE_MODES.short;
+        el.textContent = now.toLocaleDateString("en-US", mode);
+        var clock = el.querySelector("[data-time]");
+        if (clock) clock.textContent = now.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+      });
+    };
+
+    var hasClock = !!document.querySelector("[data-today] [data-time]");
+    render();
+
+    /* A minute tick refreshes any clock; a 30s tick is enough to notice a
+       DST or system-time change for date-only lines. */
+    setInterval(render, hasClock ? 1000 : 30000);
+    document.addEventListener("visibilitychange", function () { if (!document.hidden) render(); });
+    window.addEventListener("focus", render);
+    window.addEventListener("pageshow", render);
   }
 
   /* ------------------------------------------------------------------

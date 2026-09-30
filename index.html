@@ -12,8 +12,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="css/style.css" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2317513f'/%3E%3Cg fill='%23fff' transform='translate(28 26)'%3E%3Cellipse cx='22' cy='32' rx='9' ry='11'/%3E%3Cellipse cx='9' cy='19' rx='4.5' ry='5.5'/%3E%3Cellipse cx='19' cy='11' rx='4.5' ry='5.5'/%3E%3Cellipse cx='35' cy='12' rx='4.5' ry='5.5'/%3E%3Cellipse cx='44' cy='21' rx='4.5' ry='5.5'/%3E%3C/g%3E%3C/svg%3E" />
+<link rel="stylesheet" href="css/ui-updates.css" />
 </head>
 <body>
+<div class="stackly-loader" role="status" aria-label="Loading Stackly"><img src="assets/stackly-logo.webp" alt="Stackly" width="160" /><span class="stackly-loader__ring" aria-hidden="true"></span></div>
 <a class="skip-link" href="#main">Skip to main content</a>
 
 <!-- ================= TOP BAR ================= -->
@@ -423,7 +425,7 @@
         <div class="grid g-3" data-carousel>
           <article class="quote-card is-active">
             <span class="quote-card__mark" aria-hidden="true">&ldquo;</span>
-            <div class="product__rating" style="margin-bottom:.6rem"><span class="stars" aria-hidden="true">★★★★★</span> 5.0</div>
+            <div class="product__rating" style="margin-bottom:.6rem"><span class="stars" aria-hidden="true"><i class="fa-solid fa-star ico"></i><i class="fa-solid fa-star ico"></i><i class="fa-solid fa-star ico"></i><i class="fa-solid fa-star ico"></i><i class="fa-solid fa-star ico"></i></span> 5.0</div>
             <p>My rescue pup was terrified of everything. The care coach matched her diet and sent a free sample pack — she now pulls the trolley herself. Genuinely life-changing service.</p>
             <div class="quote-card__who">
               <img class="avatar" src="assets/home review marta.webp" alt="Portrait of Marta, verified customer" loading="lazy" />
@@ -432,7 +434,7 @@
           </article>
           <article class="quote-card">
             <span class="quote-card__mark" aria-hidden="true">&ldquo;</span>
-            <div class="product__rating" style="margin-bottom:.6rem"><span class="stars" aria-hidden="true">★★★★★</span> 4.9</div>
+            <div class="product__rating" style="margin-bottom:.6rem"><span class="stars" aria-hidden="true"><i class="fa-solid fa-star ico"></i><i class="fa-solid fa-star ico"></i><i class="fa-solid fa-star ico"></i><i class="fa-solid fa-star ico"></i><i class="fa-solid fa-star ico"></i></span> 4.9</div>
             <p>I have three cats and a very specific idea of what &ldquo;good litter&rdquo; means. This store passed the test on the first order and the subscription never missed a cycle.</p>
             <div class="quote-card__who">
               <img class="avatar" src="assets/home review daniel.webp" alt="Portrait of Daniel, verified customer" loading="lazy" />
@@ -441,7 +443,7 @@
           </article>
           <article class="quote-card">
             <span class="quote-card__mark" aria-hidden="true">&ldquo;</span>
-            <div class="product__rating" style="margin-bottom:.6rem"><span class="stars" aria-hidden="true">★★★★★</span> 5.0</div>
+            <div class="product__rating" style="margin-bottom:.6rem"><span class="stars" aria-hidden="true"><i class="fa-solid fa-star ico"></i><i class="fa-solid fa-star ico"></i><i class="fa-solid fa-star ico"></i><i class="fa-solid fa-star ico"></i><i class="fa-solid fa-star ico"></i></span> 5.0</div>
             <p>Booked the full grooming package for our anxious shih tzu. They messaged before, during and after, with photos. He walks out looking like a magazine cover.</p>
             <div class="quote-card__who">
               <img class="avatar" src="assets/home review aisha.webp" alt="Portrait of Aisha, verified customer" loading="lazy" />
@@ -449,10 +451,18 @@
             </div>
           </article>
         </div>
-        <div class="flex center gap-s mt-l" role="tablist" aria-label="Review slides">
-          <button class="icon-btn is-active" type="button" data-carousel-dot aria-label="Review 1"></button>
-          <button class="icon-btn" type="button" data-carousel-dot aria-label="Review 2"></button>
-          <button class="icon-btn" type="button" data-carousel-dot aria-label="Review 3"></button>
+        <div class="quote-nav" data-reveal>
+          <button class="icon-btn quote-nav__arrow" type="button" data-carousel-prev aria-label="Previous review">
+            <i class="fa-solid fa-chevron-left ico" aria-hidden="true" style="font-size:18px"></i>
+          </button>
+          <div class="quote-nav__dots" role="group" aria-label="Choose a review">
+            <button class="icon-btn is-active" type="button" data-carousel-dot aria-label="Review 1: Marta K."></button>
+            <button class="icon-btn" type="button" data-carousel-dot aria-label="Review 2: Daniel R."></button>
+            <button class="icon-btn" type="button" data-carousel-dot aria-label="Review 3: Aisha N."></button>
+          </div>
+          <button class="icon-btn quote-nav__arrow" type="button" data-carousel-next aria-label="Next review">
+            <i class="fa-solid fa-chevron-right ico" aria-hidden="true" style="font-size:18px"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -610,7 +620,7 @@
         <h5>Explore</h5>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -666,5 +676,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js" defer></script>
+<script src="js/ui-updates.js" defer></script>
 </body>
 </html>
